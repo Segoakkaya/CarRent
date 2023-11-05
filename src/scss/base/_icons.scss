@@ -1,0 +1,121 @@
+@mixin svg($name, $width, $height) {
+  width: $width;
+	height: $height;
+  background-image: url('assets/images/svg/#{$name}.svg');
+}
+
+@mixin extend-icon($name, $size, $color)
+{
+   @extend [class^="icon-"];
+   @extend [class*=" icon-"];
+   @extend .#{$name}:before;
+   color:$color;
+   font-size: $size;
+}
+
+[class^="svg-"], [class*=" svg-"] {
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icons8-filter-48:before {
+  content: "\e913";
+}
+.icon-icons8-search-64:before {
+  content: "\e900";
+}
+.icon-icons8-heart-48:before {
+  content: "\e90a";
+}
+.icon-mark .path1:before {
+  content: "\e906";
+  color: rgb(53, 99, 233);
+  opacity: 0.3;
+}
+.icon-mark .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(53, 99, 233);
+}
+.icon-mark-1 .path1:before {
+  content: "\e908";
+  color: rgb(92, 175, 252);
+  opacity: 0.3;
+}
+.icon-mark-1 .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(84, 166, 255);
+}
+.icon-Car .path1:before {
+  content: "\e90b";
+  color: rgb(144, 163, 191);
+}
+.icon-Car .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Car .path3:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(144, 163, 191);
+}
+.icon-Car .path4:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Car .path5:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(144, 163, 191);
+}
+.icon-Car .path6:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(144, 163, 191);
+}
+.icon-Car .path7:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(144, 163, 191);
+}
+.icon-Like:before {
+  content: "\e912";
+  color: #ed3f3f;
+}
+.icon-setting-2:before {
+  content: "\e901";
+}
+.icon-heart:before {
+  content: "\e902";
+}
+.icon-profile-2user:before {
+  content: "\e903";
+  color: #90a3bf;
+}
+.icon-gas-station:before {
+  content: "\e904";
+  color: #90a3bf;
+}
+.icon-notification:before {
+  content: "\e905";
+}

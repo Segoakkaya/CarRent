@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <title>Html-Webpack-Template</title>
+  </head>
+  <body data-template="index">
+    <headerpartial></headerpartial>
+    <div class="custom-container">
+      <section class="highlights">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="best">
+              <div class="box">
+                <div class="best-title">The Best Platform for Car Rental</div>
+                <div class="best-content">Ease of doing a car rental safely and reliably. Of course at a low price.</div>
+                <button class="best-btn btn btn-primary">Rental Car</button>
+              </div>
+              <div class="best-img"><img src="../assets/img/bestCar.png"></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="easy">
+              <div class="box">
+                <div class="easy-title">Easy way to rent a car at a low price</div>
+                <div class="easy-content">Providing cheap car rental services and safe and comfortable facilities.</div>
+                <button class="easy-btn btn color--white">Rental Car</button>
+              </div>
+              <div class="easy-img"><img src="../assets/img/EasyCar.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="highlightSlider d-lg-none d-md-block">
+          <div class="highSlider owl-carousel owl-theme">
+            <div class="item">
+              <div class="best">
+                <div class="box">
+                  <div class="best-title">The Best Platform for Car Rental</div>
+                  <div class="best-content">Ease of doing a car rental safely and reliably. Of course at a low price.
+                  </div>
+                  <button class="best-btn btn btn-primary">Rental Car</button>
+                </div>
+                <div class="best-img"><img src="../assets/img/bestCar.png"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="easy">
+                <div class="box">
+                  <div class="easy-title">Easy way to rent a car at a low price</div>
+                  <div class="easy-content">Providing cheap car rental services and safe and comfortable facilities.</div>
+                  <button class="easy-btn btn color--white">Rental Car</button>
+                </div>
+                <div class="easy-img"><img src="../assets/img/EasyCar.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="timer">
+        <div class="row">
+          <div class="col-lg-5 col-12">
+            <div class="pickUp">
+              <div class="pickUp-title">
+                <span class="icon-mark"><span class="path1"></span><span class="path2"></span></span>
+                Pick-Up
+              </div>
+              <div class="pickUp-gidis d-flex">
+                <div class="location d-flex flex-column">
+                  <span class="location-title">Location</span>
+                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir">
+                    <option value="0" selected disabled hidden>Select your city</option>
+                    <option value="C">A Coruña  </option>
+                    <option value="AB">Albacete  </option>
+                    <option value="A">Alicante  </option>
+                    <option value="AL">Almería  </option>
+                    <option value="AN">Andalusia</option>
+                    <option value="VI">Araba / Álava</option>
+                    <option value="AR">Aragon</option>
+                    <option value="BA">Badajoz  </option>
+                    <option value="PM">Balearic Islands</option>
+                    <option value="B">Barcelona  </option>
+                    <option value="PV">Basque Country</option>
+                    <option value="BI">Biscay</option>
+                    <option value="BU">Burgos  </option>
+                    <option value="CC">Cáceres  </option>
+                    <option value="CA">Cádiz  </option>
+                    <option value="CN">Canary Islands</option>
+                    <option value="S">Cantabria</option>
+                    <option value="CS">Castellón  </option>
+                    <option value="CL">Castile and León</option>
+                    <option value="CM">Castile-La Mancha</option>
+                    <option value="CT">Catalonia</option>
+                    <option value="CE">Ceuta</option>
+                    <option value="CR">Ciudad Real  </option>
+                    <option value="MD">Community of Madrid</option>
+                    <option value="CO">Córdoba  </option>
+                    <option value="CU">Cuenca  </option>
+                    <option value="EX">Extremadura</option>
+                    <option value="GA">Galicia</option>
+                    <option value="SS">Gipuzkoa</option>
+                    <option value="GI">Girona  </option>
+                    <option value="GR">Granada  </option>
+                    <option value="GU">Guadalajara  </option>
+                    <option value="H">Huelva  </option>
+                    <option value="HU">Huesca  </option>
+                    <option value="J">Jaén  </option>
+                    <option value="RI">La Rioja</option>
+                    <option value="GC">Las Palmas  </option>
+                    <option value="LE">León  </option>
+                    <option value="L">Lleida  </option>
+                    <option value="LU">Lugo  </option>
+                    <option value="M">Madrid  </option>
+                    <option value="MA">Málaga  </option>
+                    <option value="ML">Melilla</option>
+                    <option value="MU">Murcia  </option>
+                    <option value="NC">Navarre</option>
+                    <option value="OR">Ourense  </option>
+                    <option value="P">Palencia  </option>
+                    <option value="PO">Pontevedra  </option>
+                    <option value="O">  of Asturias</option>
+                    <option value="AV">  of Ávila</option>
+                    <option value="MC">Region of Murcia</option>
+                    <option value="SA">Salamanca  </option>
+                    <option value="TF">Santa Cruz de Tenerife  </option>
+                    <option value="SG">Segovia  </option>
+                    <option value="SE">Seville  </option>
+                    <option value="SO">Soria  </option>
+                    <option value="T">Tarragona  </option>
+                    <option value="TE">Teruel  </option>
+                    <option value="TO">Toledo  </option>
+                    <option value="V">Valencia  </option>
+                    <option value="VC">Valencian Community</option>
+                    <option value="VA">Valladolid  </option>
+                    <option value="ZA">Zamora  </option>
+                    <option value="Z">Zaragoza  </option>
+                </select>
+                </div>
+                <div class="hr"></div>
+                <div class="date d-flex flex-column">
+                  <span class="date-title">Date</span>
+                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput"/>
+                </div>
+                <div class="hr"></div>
+                <div class="time d-flex flex-column">
+                  <span class="time-title">Time</span>
+                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+            <div class="change">
+              <button class="change-btn">
+                <i class="icon-arrow-up2">↓</i>
+                <i class="icon-arrow-down2">↑</i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12">
+            <div class="pickUp">
+              <div class="pickUp-title">
+                <span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>
+                Pick-Up
+              </div>
+              <div class="pickUp-gidis d-flex">
+                <div class="location d-flex flex-column">
+                  <span class="location-title">Location</span>
+                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir">
+                    <option value="0" selected disabled hidden>Select your city</option>
+                    <option value="C">A Coruña  </option>
+                    <option value="AB">Albacete  </option>
+                    <option value="A">Alicante  </option>
+                    <option value="AL">Almería  </option>
+                    <option value="AN">Andalusia</option>
+                    <option value="VI">Araba / Álava</option>
+                    <option value="AR">Aragon</option>
+                    <option value="BA">Badajoz  </option>
+                    <option value="PM">Balearic Islands</option>
+                    <option value="B">Barcelona  </option>
+                    <option value="PV">Basque Country</option>
+                    <option value="BI">Biscay</option>
+                    <option value="BU">Burgos  </option>
+                    <option value="CC">Cáceres  </option>
+                    <option value="CA">Cádiz  </option>
+                    <option value="CN">Canary Islands</option>
+                    <option value="S">Cantabria</option>
+                    <option value="CS">Castellón  </option>
+                    <option value="CL">Castile and León</option>
+                    <option value="CM">Castile-La Mancha</option>
+                    <option value="CT">Catalonia</option>
+                    <option value="CE">Ceuta</option>
+                    <option value="CR">Ciudad Real  </option>
+                    <option value="MD">Community of Madrid</option>
+                    <option value="CO">Córdoba  </option>
+                    <option value="CU">Cuenca  </option>
+                    <option value="EX">Extremadura</option>
+                    <option value="GA">Galicia</option>
+                    <option value="SS">Gipuzkoa</option>
+                    <option value="GI">Girona  </option>
+                    <option value="GR">Granada  </option>
+                    <option value="GU">Guadalajara  </option>
+                    <option value="H">Huelva  </option>
+                    <option value="HU">Huesca  </option>
+                    <option value="J">Jaén  </option>
+                    <option value="RI">La Rioja</option>
+                    <option value="GC">Las Palmas  </option>
+                    <option value="LE">León  </option>
+                    <option value="L">Lleida  </option>
+                    <option value="LU">Lugo  </option>
+                    <option value="M">Madrid  </option>
+                    <option value="MA">Málaga  </option>
+                    <option value="ML">Melilla</option>
+                    <option value="MU">Murcia  </option>
+                    <option value="NC">Navarre</option>
+                    <option value="OR">Ourense  </option>
+                    <option value="P">Palencia  </option>
+                    <option value="PO">Pontevedra  </option>
+                    <option value="O">  of Asturias</option>
+                    <option value="AV">  of Ávila</option>
+                    <option value="MC">Region of Murcia</option>
+                    <option value="SA">Salamanca  </option>
+                    <option value="TF">Santa Cruz de Tenerife  </option>
+                    <option value="SG">Segovia  </option>
+                    <option value="SE">Seville  </option>
+                    <option value="SO">Soria  </option>
+                    <option value="T">Tarragona  </option>
+                    <option value="TE">Teruel  </option>
+                    <option value="TO">Toledo  </option>
+                    <option value="V">Valencia  </option>
+                    <option value="VC">Valencian Community</option>
+                    <option value="VA">Valladolid  </option>
+                    <option value="ZA">Zamora  </option>
+                    <option value="Z">Zaragoza  </option>
+                </select>
+                </div>
+                <div class="hr"></div>
+                <div class="date d-flex flex-column">
+                  <span class="date-title">Date</span>
+                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput"/>
+                </div>
+                <div class="hr"></div>
+                <div class="time d-flex flex-column">
+                  <span class="time-title">Time
+                  </span>
+                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popularCar">
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand">Popular Car</a>
+            <a href="#" class="navbar-brands">View All</a>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="card">
+              <div class="card-title d-flex justify-content-between">
+                <span>Koenigsegg</span>
+                <a class="like"><span class="icon-icons8-heart-48"></span></a>
+              </div>
+              <span class="card-genre">sport</span>
+              <img src="../assets/img/PopularCar1.png" class="card-img-top my-5">
+              <div class="card-body">
+                <div class="card-body-content mb-4">
+                  <i class="icon-gas-station"></i>
+                  90L
+                  <span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>
+                  Manual
+                  <i class="icon-profile-2user"></i>
+                  2 People
+                </div>
+                <div class="card-body-sell d-flex justify-content-between my-3">
+                  <span class="card-body-sell-money">$99.00/<span class="card-body-sell-day">day</span></span>
+                  <a href="#" class="btn btn-primary">Rent Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+    </div>
+  </body>
+</html>

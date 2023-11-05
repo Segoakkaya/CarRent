@@ -1,0 +1,20 @@
+input, textarea {
+    outline: none !important;
+}
+input[name="date"]{
+    background-image: url("assets/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 117px 6px;
+    background-size: 9px;
+}
+input[name="saat"]{
+    background-image: url("assets/img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 117px 6px;
+    background-size: 9px;
+}
+
+@include media-breakpoint-down(lg)  { }
+@include media-breakpoint-down(md)  { }
+@include media-breakpoint-down(sm)  { }
+@include media-breakpoint-down(def) { }

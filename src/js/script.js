@@ -204,16 +204,16 @@
               $('input[name="saat"]').val('Select Your Time');
 
 
-              var clicked=true;
+              var clicked=false;
               
               $(".like").on("click",function(){
-                if(clicked==true){
-                $(this).html("<i class='icon-Like'></i>");
-                clicked=false;
+                if(clicked==false){
+                    $(this).html("<img src='../assets/img/heart.png'>");
+                clicked=true;
             }
                 else{
-                $(this).html("<img src='../assets/img/heart.png'>");
-                clicked=true;
+                    $(this).html("<i class='icon-Like'></i>");
+                clicked=false;
             }
             });
 
@@ -235,18 +235,25 @@
                     }
                 }
             })
-            $(".recomendation").on("click",function(){
-                var cars= $(".card").length;
+            $(".recomendation").on("mousemove",function(){
+                var cars= $(".recard").length;
                 $(".count").text(cars+" Cars");
             });
-            $(".recomendation-sm").on("click",function(){
-                var cars= $(".card").length;
+            $(".recomendation-sm").on("mousemove",function(){
+                var cars= $(".recard-sm").length;
                 $(".count").text(cars+" Cars");
             });
             $(".ShowMore").on("click",function(){
                 $(".recomendation").append($(".recomendation").html());
                 $(".recomendation-sm").append($(".recomendation-sm").html());
             });
+            $(".card").on("click",function(){
+                var likes= $(".icon-Like").length;
+                $(".likescount").text(likes);
+            });
+
+
+
         },
         utility: {
             cookie: {

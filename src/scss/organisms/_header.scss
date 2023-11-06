@@ -55,7 +55,20 @@ header{
                 background-color:  #596780;;
             }
         }
-        
+        .likescount{
+            position: absolute;
+            top: -15px;
+            left: 16px;
+            transition: all 0.5s;
+            font-size: 11px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 5px 8px;
+            color: white;
+            @extend .ff--Jakarta;
+        }
     }
 }
 .header-sm{

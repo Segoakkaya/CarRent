@@ -17385,7 +17385,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Jakarta, header, .custom-container-partial, .custom-container {
+.ff--Jakarta, header .menu_list .likescount, header, .custom-container-partial, .custom-container {
   font-family: Plus Jakarta Sans;
 }
 
@@ -18337,6 +18337,19 @@ header .menu_list-item {
 header .menu_list-item:hover {
   color: white;
   background-color: #596780;
+}
+header .menu_list .likescount {
+  position: absolute;
+  top: -15px;
+  left: 16px;
+  transition: all 0.5s;
+  font-size: 11px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px 8px;
+  color: white;
 }
 
 .header-sm {

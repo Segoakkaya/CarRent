@@ -203,20 +203,6 @@
          });
               $('input[name="saat"]').val('Select Your Time');
 
-
-              var clicked=false;
-              
-              $(".like").on("click",function(){
-                if(clicked==false){
-                    $(this).html("<img src='../assets/img/heart.png'>");
-                clicked=true;
-            }
-                else{
-                    $(this).html("<i class='icon-Like'></i>");
-                clicked=false;
-            }
-            });
-
             $('.popularCarousel').owlCarousel({
                 loop:true,
                 nav:false,
@@ -251,9 +237,18 @@
                 var likes= $(".icon-Like").length;
                 $(".likescount").text(likes);
             });
-
-
-
+            var clicked=false;
+              
+              $(".like").on("click",function(){
+                if(clicked==false){
+                    $(this).html("<img src='../assets/img/heart.png'>");
+                clicked=true;
+            }
+                else{
+                    $(this).html("<i class='icon-Like'></i>");
+                clicked=false;
+            }
+            });
         },
         utility: {
             cookie: {

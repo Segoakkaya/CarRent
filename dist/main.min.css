@@ -18364,7 +18364,7 @@ header .menu_list .likescount {
   flex-direction: row-reverse;
   z-index: 9;
   width: 45px;
-  gap: 15px !important;
+  gap: 10px !important;
   transition: 0.3s all;
   overflow: hidden;
   cursor: pointer;
@@ -19417,7 +19417,7 @@ header .menu_list .likescount {
   padding: 24px;
   border: none;
   transition: 0.3s all;
-  max-width: 400px;
+  max-width: 432px;
 }
 .popularCar .card:hover {
   box-shadow: 1px 2px 13px;

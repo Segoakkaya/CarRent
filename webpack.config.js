@@ -92,17 +92,17 @@ module.exports = {
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_mobilemenu.html'),
             location:'mobilemenu',
-            template_filename:['index.html']
+            template_filename:['index.html','CarDetails.html']
           }),
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_header.html'),
             location:'headerpartial',
-            template_filename:['index.html']
+            template_filename:['index.html','CarDetails.html']
           }),
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_footer.html'),
             location:'footerpartial',
-            template_filename:['index.html']
+            template_filename:['index.html','CarDetails.html']
           }),
     ],
     module: {

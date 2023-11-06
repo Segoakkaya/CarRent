@@ -16973,7 +16973,7 @@ table {
   font-weight: 799 !important;
 }
 
-.font-weight--800, .popularCar .card-body-sell-day, .popularCar .card-body-sell-money, .popularCar .card-genre, .popularCar .card-title span {
+.font-weight--800, .recomendation-sm .card-body-sell-day, .recomendation-sm .card-body-sell-money, .recomendation-sm .card-genre, .recomendation-sm .card-title span, .RecomendationCar .card-body-sell-day, .RecomendationCar .card-body-sell-money, .RecomendationCar .card-genre, .RecomendationCar .card-title span, .popularCar .card-body-sell-day, .popularCar .card-body-sell-money, .popularCar .card-genre, .popularCar .card-title span {
   font-weight: 800 !important;
 }
 
@@ -17385,7 +17385,7 @@ table {
   font-weight: normal;
 }
 
-.ff--Jakarta, header, .custom-container {
+.ff--Jakarta, header, .custom-container-partial, .custom-container {
   font-family: Plus Jakarta Sans;
 }
 
@@ -18262,11 +18262,25 @@ body {
   background: #F6F7F9;
 }
 
+.custom-container-partial {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: white;
+}
+
 @media (max-width: 991.96px) {
   .custom-container {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+  }
+  .custom-container-partial {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 header .logo {
@@ -18334,10 +18348,10 @@ header .menu_list-item:hover {
 }
 .header-sm .menu_list {
   position: absolute;
-  flex-direction: column;
+  flex-direction: row-reverse;
   z-index: 9;
-  height: 50px;
-  gap: 10px;
+  width: 45px;
+  gap: 15px !important;
   transition: 0.3s all;
   overflow: hidden;
   cursor: pointer;
@@ -18361,7 +18375,7 @@ header .menu_list-item:hover {
 }
 
 .buyut {
-  height: 300px !important;
+  width: 300px !important;
   overflow: visible;
 }
 
@@ -18376,6 +18390,161 @@ header .menu_list-item:hover {
   }
   .header-lg {
     display: none;
+  }
+}
+.product {
+  flex-shrink: 0;
+  padding-top: 80px !important;
+  padding-bottom: 60px !important;
+}
+.product .bilgi {
+  width: 292px;
+}
+.product .bilgi .logo {
+  color: #3563E9;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+}
+.product .bilgi_content {
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  text-wrap: wrap;
+}
+.product .abouts_content {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.product .abouts_list {
+  display: flex;
+  width: 152px;
+  height: 188px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 24px;
+}
+.product .abouts_list-item a {
+  text-decoration: none;
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.product .cmnt_content {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.product .cmnt_list {
+  display: flex;
+  width: 152px;
+  height: 188px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 24px;
+}
+.product .cmnt_list-item a {
+  text-decoration: none;
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.product .socials_content {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.product .socials_list {
+  display: flex;
+  width: 152px;
+  height: 188px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 24px;
+}
+.product .socials_list-item a {
+  text-decoration: none;
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.product .footer {
+  margin-top: 36px;
+  padding-top: 36px;
+  border-top: 1px solid #E0E9F4;
+}
+.product .footer_content {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.product .footer_privacy {
+  text-decoration: none;
+  color: #1A202C;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.product .footer_terms {
+  text-decoration: none;
+  color: #1A202C;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+@media (max-width: 991.96px) {
+  .foter {
+    order: 3;
+    margin-top: 25px;
+  }
+  .product .bilgi {
+    margin-top: 15px;
+  }
+  .product .abouts {
+    margin-top: 15px;
+  }
+  .product .cmnt {
+    margin-top: 15px;
+  }
+  .product .socials {
+    margin-top: 15px;
   }
 }
 .mobile-menu-btn {
@@ -19199,7 +19368,6 @@ header .menu_list-item:hover {
   max-width: 130px;
 }
 .timer .change {
-  box-shadow: 1px 3px 38px 7px #1A37A7;
   border-radius: 15px;
   z-index: 9;
 }
@@ -19312,6 +19480,124 @@ header .menu_list-item:hover {
   box-shadow: none;
 }
 
+.RecomendationCar .navbar-brand {
+  color: #90A3BF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.RecomendationCar .navbar-brands {
+  color: #3563E9;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.RecomendationCar .card {
+  padding: 24px;
+  border: none;
+  transition: 0.3s all;
+  height: 100%;
+}
+.RecomendationCar .card:hover {
+  box-shadow: 1px 2px 13px;
+}
+.RecomendationCar .card-title span {
+  line-height: 150%;
+  font-size: 20px;
+}
+.RecomendationCar .card-title i {
+  font-size: 24px;
+  color: #90A3BF;
+}
+.RecomendationCar .card-title .like {
+  text-decoration: none;
+  color: #90A3BF;
+}
+.RecomendationCar .card-genre {
+  font-size: 14px;
+  line-height: 10%;
+  color: #90A3BF;
+}
+.RecomendationCar .card-img-top {
+  padding: 16px;
+}
+.RecomendationCar .card-body {
+  text-wrap: wrap;
+}
+.RecomendationCar .card-body-content {
+  font-size: 14px;
+}
+.RecomendationCar .card-body-content i {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #90A3BF;
+}
+.RecomendationCar .card-body-sell-money {
+  font-size: 20px;
+  color: #000000;
+}
+.RecomendationCar .card-body-sell-day {
+  font-size: 14px;
+  color: #90A3BF;
+}
+
+.recomendation-sm {
+  display: none;
+}
+.recomendation-sm .card {
+  padding: 24px;
+  border: none;
+  transition: 0.3s all;
+  height: 100%;
+}
+.recomendation-sm .card:hover {
+  box-shadow: 1px 2px 13px;
+}
+.recomendation-sm .card-title span {
+  line-height: 150%;
+  font-size: 20px;
+}
+.recomendation-sm .card-title i {
+  font-size: 24px;
+  color: #90A3BF;
+}
+.recomendation-sm .card-title .like {
+  text-decoration: none;
+  color: #90A3BF;
+}
+.recomendation-sm .card-genre {
+  font-size: 14px;
+  line-height: 10%;
+  color: #90A3BF;
+}
+.recomendation-sm .card-img-top {
+  padding: 16px;
+}
+.recomendation-sm .card-body {
+  text-wrap: wrap;
+}
+.recomendation-sm .card-body-content {
+  font-size: 14px;
+}
+.recomendation-sm .card-body-content i {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #90A3BF;
+}
+.recomendation-sm .card-body-sell-money {
+  font-size: 20px;
+  color: #000000;
+}
+.recomendation-sm .card-body-sell-day {
+  font-size: 14px;
+  color: #90A3BF;
+}
+
 .love {
   color: red !important;
 }
@@ -19380,14 +19666,59 @@ header .menu_list-item:hover {
   }
   .popularCar .card-body-content {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
   }
   .popularCar .card-body-sell {
     flex-direction: column;
     gap: 10px;
+  }
+  .recomendation {
+    display: none;
+    gap: 20px;
+  }
+  .recomendation .row {
+    gap: 20px;
+    display: none;
+  }
+  .recomendation .card {
+    padding: 10px;
+  }
+  .recomendation .card-body-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recomendation .card-body-sell {
+    gap: 10px;
+  }
+  .recomendation-sm {
+    display: block;
+  }
+  .recomendation-sm .row {
+    gap: 20px;
+  }
+  .recomendation-sm .card {
+    padding: 25px;
+  }
+  .recomendation-sm .card-body {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .recomendation-sm .card-body .card-img-top {
+    width: 221px;
+    padding: 0px !important;
+  }
+  .recomendation-sm .card-body-content {
+    align-items: start;
+    justify-content: space-between;
+    width: 70px;
+    font-size: 12px;
+    height: 100px;
+  }
+  .recomendation-sm .card-body-content .icon-Car {
+    margin-left: 5px;
+  }
+  .recomendation-sm .card-body-sell {
+    text-align: center;
   }
 }
 @media (max-width: 991.96px) {

@@ -235,7 +235,18 @@
                     }
                 }
             })
-
+            $(".recomendation").on("click",function(){
+                var cars= $(".card").length;
+                $(".count").text(cars+" Cars");
+            });
+            $(".recomendation-sm").on("click",function(){
+                var cars= $(".card").length;
+                $(".count").text(cars+" Cars");
+            });
+            $(".ShowMore").on("click",function(){
+                $(".recomendation").append($(".recomendation").html());
+                $(".recomendation-sm").append($(".recomendation-sm").html());
+            });
         },
         utility: {
             cookie: {

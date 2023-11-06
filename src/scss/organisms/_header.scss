@@ -66,10 +66,10 @@ header{
     }
     .menu_list{
         position: absolute;
-        flex-direction: column;
+        flex-direction: row-reverse;
         z-index: 9;
-        height: 50px;
-        gap: 10px;
+        width: 45px;
+        gap: 15px !important;
         transition: 0.3s all;
         overflow: hidden;
         cursor: pointer;
@@ -94,7 +94,7 @@ header{
 }
 
 .buyut{
-    height: 300px !important;
+    width: 300px !important;
     overflow: visible;
 }
 

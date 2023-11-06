@@ -16,6 +16,14 @@ body{
     @extend .ff--Jakarta;
     background: #F6F7F9;
 }
+.custom-container-partial{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @extend .ff--Jakarta;
+    background: white;
+}
 @media (max-width:1366px) { }
 @include media-breakpoint-down(lg)  { }
 @include media-breakpoint-down(md)  { 
@@ -23,6 +31,12 @@ body{
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 20px;
+    }
+    .custom-container-partial{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 @include media-breakpoint-down(sm)  { }

@@ -204,9 +204,38 @@
               $('input[name="saat"]').val('Select Your Time');
 
 
+              var clicked=true;
+              
               $(".like").on("click",function(){
-                  $(this).toggleClass("love");
-              });
+                if(clicked==true){
+                $(this).html("<i class='icon-Like'></i>");
+                clicked=false;
+            }
+                else{
+                $(this).html("<img src='../assets/img/heart.png'>");
+                clicked=true;
+            }
+            });
+
+            $('.popularCarousel').owlCarousel({
+                loop:true,
+                nav:false,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+
         },
         utility: {
             cookie: {

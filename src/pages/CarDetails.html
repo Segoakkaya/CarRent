@@ -12,6 +12,77 @@
   </head>
   <body data-template="index">
     <headerpartial></headerpartial>
+    <div class="container-fluid m-0 p-0">
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-black bg--white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <div class="check-group-type">
+          <span class="check-group-type_content">TYPE</span>
+          <div class="checkbox-wrapper-42">
+            <input id="sport" type="checkbox" />
+            <label class="cbx" for="sport"></label>
+            <label class="lbl" for="sport">Sport</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="suv" type="checkbox" />
+            <label class="cbx" for="suv"></label>
+            <label class="lbl" for="suv">Suv</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="mpv" type="checkbox" />
+            <label class="cbx" for="mpv"></label>
+            <label class="lbl" for="mpv">MPV</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="sedan" type="checkbox" />
+            <label class="cbx" for="sedan"></label>
+            <label class="lbl" for="sedan">Sedan</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="coupe" type="checkbox" />
+            <label class="cbx" for="coupe"></label>
+            <label class="lbl" for="coupe">Coupe</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="hatchback" type="checkbox" />
+            <label class="cbx" for="hatchback"></label>
+            <label class="lbl" for="hatchback">Hatchback</label>
+          </div>
+        </div>
+        
+        <div class="check-group-capacity">
+          <span class="check-group-capacity_content">CAPACITY</span>
+          <div class="checkbox-wrapper-42">
+            <input id="2people" type="checkbox" />
+            <label class="cbx" for="2people"></label>
+            <label class="lbl" for="2people">2 Person</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="4people" type="checkbox" />
+            <label class="cbx" for="4people"></label>
+            <label class="lbl" for="4people">4 Person</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="6people" type="checkbox" />
+            <label class="cbx" for="6people"></label>
+            <label class="lbl" for="6people">6 Person</label>
+          </div>
+          <div class="checkbox-wrapper-42">
+            <input id="8people" type="checkbox" />
+            <label class="cbx" for="8people"></label>
+            <label class="lbl" for="8people">8 Person or More</label>
+          </div>
+        </div>
+        <div class="check-group-price">
+          <span class="check-group-price_content">PRICE</span>
+          <div class="range">  
+            <input type="range" id="range1"/>
+          </div>
+          <span>Max. $100.00</span>
+        </div>
+      </div>
+    </div>
     <footerpartial></footerpartial>
   </body>
 </html>

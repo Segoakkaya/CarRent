@@ -73,6 +73,13 @@ module.exports = {
             inject: 'head',
             favicon: ''
             // inject: true => Otomatik olarak build dosyasını script tag'ı olarak eklemeyi sağlar.
+          }),
+          new HtmlWebpackPlugin({
+            filename: 'CarDetails.html',
+            template: './src/pages/CarDetails.html',
+            inject: 'head',
+            favicon: ''
+            // inject: true => Otomatik olarak build dosyasını script tag'ı olarak eklemeyi sağlar.
           }), 
           new MiniCssExtractPlugin({
             filename: 'main.min.css'

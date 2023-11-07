@@ -19510,9 +19510,6 @@ header .menu_list .likescount {
   line-height: normal;
   text-decoration: none;
 }
-.RecomendationCar .recomendation .row {
-  width: 80%;
-}
 .RecomendationCar .card {
   padding: 24px;
   border: none;
@@ -19626,9 +19623,6 @@ header .menu_list .likescount {
   }
   .timer .pickUp-gidis {
     gap: 5px !important;
-  }
-  .RecomendationCar .recomendation .row {
-    width: 100% !important;
   }
 }
 @media (max-width: 1199.96px) {
@@ -19913,6 +19907,10 @@ header .menu_list .likescount {
   box-shadow: -407px 0 0 400px #3563E9;
 }
 
+.sSs {
+  width: 80%;
+}
+
 .carbody {
   padding: 32px;
   width: 100%;
@@ -19932,6 +19930,9 @@ header .menu_list .likescount {
   }
   .timer .pickUp-gidis {
     gap: 5px !important;
+  }
+  .sSs {
+    width: 100% !important;
   }
 }
 @media (max-width: 1199.96px) {

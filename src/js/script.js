@@ -325,10 +325,21 @@
                 }
               });
                 $(".btnSearch").on("click", function() {
-                  
-
-
-                    
+                  if($(".filterText").val()=="Koenigsegg"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#Koenigsegg" ).parent().css( "display", "block");
+                  }
+                  else if($(".filterText").val()=="Nissan"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#Nissan" ).parent().css( "display", "block");
+                  }
+                  else if($(".filterText").val()=="Rolls-Royce"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#Rolls-Royce" ).parent().css( "display", "block");
+                  }
+                  else{
+                    $(".card").css("display","block");
+                  }
                 });
         },
         utility: {

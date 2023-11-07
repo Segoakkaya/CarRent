@@ -221,8 +221,11 @@
                     }
                 }
             })
+
+
+            var cars= $(".recard").length;
             $(".recomendation").on("mousemove",function(){
-                var cars= $(".recard").length;
+                
                 $(".count").text(cars+" Cars");
             });
             $(".recomendation-sm").on("mousemove",function(){
@@ -230,13 +233,23 @@
                 $(".count").text(cars+" Cars");
             });
             $(".ShowMore").on("click",function(){
+                if($(".recard-sm").length<120){
                 $(".recomendation").append($(".recomendation").html());
                 $(".recomendation-sm").append($(".recomendation-sm").html());
+                }
+                else{
+                    alert("No More Car To Show!");
+                }
             });
+
+
             $(".card").on("click",function(){
                 var likes= $(".icon-Like").length;
                 $(".likescount").text(likes);
             });
+
+
+            
             var clicked=false;
               
               $(".like").on("click",function(){
@@ -249,19 +262,68 @@
                 clicked=false;
             }
             });
-            const sliderEl = document.querySelector("#range2")
-            const sliderValue = document.querySelector(".value2")
-            
-            sliderEl.addEventListener("input", (event) => {
-              const tempSliderValue = event.target.value; 
-              sliderValue.textContent = tempSliderValue;
-              
-              const progress = (tempSliderValue / sliderEl.max) * 100;
-             
-              sliderEl.style.background = `linear-gradient(to right, #f50 ${progress}%, #ccc ${progress}%)`;
-            })
-            
 
+
+
+            $("#range1").on("change",function(){
+                var value=$(this).val();
+                $(".check-group-price_value").text(" $"+value+".00")
+            });
+            $(".btnFilter").on("click",function(){
+                $(".sidebar").toggleClass("slideopen");
+            });
+
+            $("body").on("load",function(){
+                var sportcount=$("#sport").length;
+                $("#sportcount").text(sportcount);
+                var hatchbackcount=$("#hatchback").length;
+                $("#hatchbackcount").text(hatchbackcount);
+                var suvcount=$("#suv").length;
+                $("#suvcount").text(suvcount);
+                var sedancount=$("#sedan").length;
+                $("#sedancount").text(sedancount);
+            });
+
+            $('#sports').on("click",function() {
+                if ($(this).is(':checked')) {
+                $(".card").css("display","none");
+                $( "div" ).filter( "#sport").css( "display", "block");
+                
+                }
+                else{
+                    $(".card").css("display","block");
+                }
+              });
+              $('#suvs').on("click",function() {
+                if ($(this).is(':checked')) {
+                $(".card").css("display","none");
+                $( "div" ).filter( "#suv" ).css( "display", "block");
+               
+                }
+                else{
+                    $(".card").css("display","block");
+                }
+              });
+              $('#hatchbacks').on("click",function() {
+                if ($(this).is(':checked')) {
+                $(".card").css("display","none");
+                $( "div" ).filter( "#hatchback" ).css( "display", "block");
+                
+                }
+                else{
+                    $(".card").css("display","block");
+                }
+              });
+              $('#sedans').on("click",function() {
+                if ($(this).is(':checked')) {
+                $(".card").css("display","none");
+                $( "div" ).filter( "#sedan" ).css( "display", "block");
+                
+                }
+                else{
+                    $(".card").css("display","block");
+                }
+              });
         },
         utility: {
             cookie: {

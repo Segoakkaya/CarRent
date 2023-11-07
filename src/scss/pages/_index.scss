@@ -304,6 +304,11 @@
             text-decoration: none;
         }
     }
+    .recomendation{
+        .row{
+            width: 80%;
+        }
+    }
     .card{
         padding: 24px;
         border: none;
@@ -425,7 +430,7 @@
 .love{
     color: red !important;
 }
-@media (max-width:1400px) {
+@media (max-width:1440px) {
     .timer{
         .pickUp{
             padding-left: 25px !important;
@@ -435,6 +440,13 @@
                 gap: 5px !important;
             }
         }
+    }
+    .RecomendationCar {
+        .recomendation{
+        .row{
+            width: 100% !important;
+        }
+    }
     }
 }
 @include media-breakpoint-down(lg)  {

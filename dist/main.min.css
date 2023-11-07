@@ -19510,6 +19510,9 @@ header .menu_list .likescount {
   line-height: normal;
   text-decoration: none;
 }
+.RecomendationCar .recomendation .row {
+  width: 80%;
+}
 .RecomendationCar .card {
   padding: 24px;
   border: none;
@@ -19615,7 +19618,7 @@ header .menu_list .likescount {
   color: red !important;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .timer .pickUp {
     padding-left: 25px !important;
     padding-top: 24px;
@@ -19623,6 +19626,9 @@ header .menu_list .likescount {
   }
   .timer .pickUp-gidis {
     gap: 5px !important;
+  }
+  .RecomendationCar .recomendation .row {
+    width: 100% !important;
   }
 }
 @media (max-width: 1199.96px) {
@@ -19805,7 +19811,12 @@ header .menu_list .likescount {
     display: none;
   }
 }
-.check-group-type_content {
+.sidebar {
+  width: 280px;
+  gap: 56px;
+  padding: 32px;
+}
+.sidebar .check-group-type_content {
   color: #90A3BF;
   font-size: 12px;
   font-style: normal;
@@ -19813,7 +19824,18 @@ header .menu_list .likescount {
   line-height: normal;
   letter-spacing: -0.24px;
 }
-.check-group-capacity_content {
+.sidebar .check-group-type .checkbox-wrapper-42 {
+  margin-top: 32px;
+}
+.sidebar .check-group-type .checkbox-wrapper-42 span {
+  color: #90A3BF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.sidebar .check-group-capacity_content {
   color: #90A3BF;
   font-size: 12px;
   font-style: normal;
@@ -19821,7 +19843,10 @@ header .menu_list .likescount {
   line-height: normal;
   letter-spacing: -0.24px;
 }
-.check-group-price_content {
+.sidebar .check-group-capacity .checkbox-wrapper-42 {
+  margin-top: 32px;
+}
+.sidebar .check-group-price_content {
   color: #90A3BF;
   font-size: 12px;
   font-style: normal;
@@ -19829,7 +19854,26 @@ header .menu_list .likescount {
   line-height: normal;
   letter-spacing: -0.24px;
 }
-.check-group-price #range1 {
+.sidebar .check-group-price_value {
+  color: #596780;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  margin-top: 28px;
+}
+.sidebar .check-group-price_maxvalue {
+  color: #596780;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.sidebar .check-group-price #range1 {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
@@ -19837,18 +19881,20 @@ header .menu_list .likescount {
   outline: none;
   overflow: hidden;
   border-radius: 16px;
+  margin-top: 28px;
+  margin-bottom: 16px;
 }
-.check-group-price #range1::-webkit-slider-runnable-track {
+.sidebar .check-group-price #range1::-webkit-slider-runnable-track {
   height: 15px;
   background: #ccc;
   border-radius: 16px;
 }
-.check-group-price #range1::-moz-range-track {
+.sidebar .check-group-price #range1::-moz-range-track {
   height: 15px;
   background: #ccc;
   border-radius: 16px;
 }
-.check-group-price #range1::-webkit-slider-thumb {
+.sidebar .check-group-price #range1::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 15px;
@@ -19858,7 +19904,7 @@ header .menu_list .likescount {
   border: 2px solid #3563E9;
   box-shadow: -407px 0 0 400px #3563E9;
 }
-.check-group-price #range1::-moz-range-thumb {
+.sidebar .check-group-price #range1::-moz-range-thumb {
   height: 15px;
   width: 15px;
   background-color: #fff;
@@ -19867,6 +19913,42 @@ header .menu_list .likescount {
   box-shadow: -407px 0 0 400px #3563E9;
 }
 
+.carbody {
+  padding: 32px;
+  width: 100%;
+}
+
+.slideopen {
+  left: 0px !important;
+  z-index: 999;
+  height: 100%;
+}
+
+@media (max-width: 1440px) {
+  .timer .pickUp {
+    padding-left: 13px !important;
+    padding-top: 24px;
+    border-radius: 10px;
+  }
+  .timer .pickUp-gidis {
+    gap: 5px !important;
+  }
+}
+@media (max-width: 1199.96px) {
+  .timer .pickUp {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991.96px) {
+  .custom-container-fluid {
+    position: relative;
+  }
+  .sidebar {
+    position: absolute;
+    left: -300px;
+    transition: 0.3s all;
+  }
+}
 .checkbox-wrapper-42 input[type=checkbox] {
   display: none;
   visibility: hidden;

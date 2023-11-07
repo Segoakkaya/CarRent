@@ -11,43 +11,47 @@
     <title>Html-Webpack-Template</title>
   </head>
   <body data-template="index">
-    <headerpartial></headerpartial>
-    <div class="container-fluid m-0 p-0">
-      <div class="d-flex flex-column flex-shrink-0 p-3 text-black bg--white" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        </a>
+    <headerpartial>
+    </headerpartial>
+    <div class="custom-container-fluid d-flex m-0 p-0">
+      <div class="d-flex flex-column flex-shrink-0 text-black bg--white sidebar">
         <div class="check-group-type">
           <span class="check-group-type_content">TYPE</span>
           <div class="checkbox-wrapper-42">
-            <input id="sport" type="checkbox" />
-            <label class="cbx" for="sport"></label>
-            <label class="lbl" for="sport">Sport</label>
+            <input id="sports" type="checkbox" />
+            <label class="cbx" for="sports"></label>
+            <label class="lbl" for="sports">Sport</label>
+            <span id="sportcount"></span>
           </div>
           <div class="checkbox-wrapper-42">
-            <input id="suv" type="checkbox" />
-            <label class="cbx" for="suv"></label>
-            <label class="lbl" for="suv">Suv</label>
+            <input id="suvs" type="checkbox" />
+            <label class="cbx" for="suvs"></label>
+            <label class="lbl" for="suvs">Suv</label>
+            <span id="suvcount"></span>
           </div>
           <div class="checkbox-wrapper-42">
-            <input id="mpv" type="checkbox" />
-            <label class="cbx" for="mpv"></label>
-            <label class="lbl" for="mpv">MPV</label>
+            <input id="mpvs" type="checkbox" />
+            <label class="cbx" for="mpvs"></label>
+            <label class="lbl" for="mpvs">MPV</label>
+            <span id="mpvcount"></span>
           </div>
           <div class="checkbox-wrapper-42">
-            <input id="sedan" type="checkbox" />
-            <label class="cbx" for="sedan"></label>
-            <label class="lbl" for="sedan">Sedan</label>
+            <input id="sedans" type="checkbox" />
+            <label class="cbx" for="sedans"></label>
+            <label class="lbl" for="sedans">Sedan</label>
+            <span id="sedancount"></span>
           </div>
           <div class="checkbox-wrapper-42">
-            <input id="coupe" type="checkbox" />
-            <label class="cbx" for="coupe"></label>
-            <label class="lbl" for="coupe">Coupe</label>
+            <input id="coupes" type="checkbox" />
+            <label class="cbx" for="coupes"></label>
+            <label class="lbl" for="coupes">Coupe</label>
+            <span id="coupecount"></span>
           </div>
           <div class="checkbox-wrapper-42">
-            <input id="hatchback" type="checkbox" />
-            <label class="cbx" for="hatchback"></label>
-            <label class="lbl" for="hatchback">Hatchback</label>
+            <input id="hatchbacks" type="checkbox" />
+            <label class="cbx" for="hatchbacks"></label>
+            <label class="lbl" for="hatchbacks">Hatchback</label>
+            <span id="hatchbackcount"></span>
           </div>
         </div>
         
@@ -76,11 +80,628 @@
         </div>
         <div class="check-group-price">
           <span class="check-group-price_content">PRICE</span>
+          <div class="check-group-price_value"> $60.00</div>
           <div class="range">  
-            <input type="range" id="range1"/>
+            <input type="range" id="range1" step="20"/>
           </div>
-          <span>Max. $100.00 </span>
+          <span class="check-group-price_maxvalue">Max. $100.00 </span>
         </div>
+      </div>
+      <div class="carbody d-flex flex-column">
+        <section class="timer">
+          <div class="row">
+            <div class="col-lg-5 col-12">
+              <div class="pickUp">
+                <div class="pickUp-title">
+                  <span class="icon-mark"><span class="path1"></span><span class="path2"></span></span>
+                  Pick-Up
+                </div>
+                <div class="pickUp-gidis d-flex">
+                  <div class="location d-flex flex-column">
+                    <span class="location-title">Location</span>
+                    <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir" id="pickUp-location">
+                      <option value="0" selected disabled hidden>Select your city</option>
+                      <option value="C">A Coruña  </option>
+                      <option value="AB">Albacete  </option>
+                      <option value="A">Alicante  </option>
+                      <option value="AL">Almería  </option>
+                      <option value="AN">Andalusia</option>
+                      <option value="VI">Araba / Álava</option>
+                      <option value="AR">Aragon</option>
+                      <option value="BA">Badajoz  </option>
+                      <option value="PM">Balearic Islands</option>
+                      <option value="B">Barcelona  </option>
+                      <option value="PV">Basque Country</option>
+                      <option value="BI">Biscay</option>
+                      <option value="BU">Burgos  </option>
+                      <option value="CC">Cáceres  </option>
+                      <option value="CA">Cádiz  </option>
+                      <option value="CN">Canary Islands</option>
+                      <option value="S">Cantabria</option>
+                      <option value="CS">Castellón  </option>
+                      <option value="CL">Castile and León</option>
+                      <option value="CM">Castile-La Mancha</option>
+                      <option value="CT">Catalonia</option>
+                      <option value="CE">Ceuta</option>
+                      <option value="CR">Ciudad Real  </option>
+                      <option value="MD">Community of Madrid</option>
+                      <option value="CO">Córdoba  </option>
+                      <option value="CU">Cuenca  </option>
+                      <option value="EX">Extremadura</option>
+                      <option value="GA">Galicia</option>
+                      <option value="SS">Gipuzkoa</option>
+                      <option value="GI">Girona  </option>
+                      <option value="GR">Granada  </option>
+                      <option value="GU">Guadalajara  </option>
+                      <option value="H">Huelva  </option>
+                      <option value="HU">Huesca  </option>
+                      <option value="J">Jaén  </option>
+                      <option value="RI">La Rioja</option>
+                      <option value="GC">Las Palmas  </option>
+                      <option value="LE">León  </option>
+                      <option value="L">Lleida  </option>
+                      <option value="LU">Lugo  </option>
+                      <option value="M">Madrid  </option>
+                      <option value="MA">Málaga  </option>
+                      <option value="ML">Melilla</option>
+                      <option value="MU">Murcia  </option>
+                      <option value="NC">Navarre</option>
+                      <option value="OR">Ourense  </option>
+                      <option value="P">Palencia  </option>
+                      <option value="PO">Pontevedra  </option>
+                      <option value="O">  of Asturias</option>
+                      <option value="AV">  of Ávila</option>
+                      <option value="MC">Region of Murcia</option>
+                      <option value="SA">Salamanca  </option>
+                      <option value="TF">Santa Cruz de Tenerife  </option>
+                      <option value="SG">Segovia  </option>
+                      <option value="SE">Seville  </option>
+                      <option value="SO">Soria  </option>
+                      <option value="T">Tarragona  </option>
+                      <option value="TE">Teruel  </option>
+                      <option value="TO">Toledo  </option>
+                      <option value="V">Valencia  </option>
+                      <option value="VC">Valencian Community</option>
+                      <option value="VA">Valladolid  </option>
+                      <option value="ZA">Zamora  </option>
+                      <option value="Z">Zaragoza  </option>
+                  </select>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="date d-flex flex-column">
+                    <span class="date-title">Date</span>
+                    <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput" id="pickUp-date"/>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="time d-flex flex-column">
+                    <span class="time-title">Time</span>
+                    <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat" id="pickUp-hour"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
+              <div class="change">
+                <button class="change-btn" id="changebtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                    <path d="M5.16051 0.835774L5.16051 14.4536" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.08273 4.93188L5.1605 0.835218L9.23828 4.93188" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.0887 17.1671L15.0887 3.54934" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.1665 13.071L15.0887 17.1677L11.0109 13.071" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12">
+              <div class="pickUp">
+                <div class="pickUp-title">
+                  <span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>
+                  Drop-off
+                </div>
+                <div class="pickUp-gidis d-flex">
+                  <div class="location d-flex flex-column">
+                    <span class="location-title">Location</span>
+                    <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir" id="dropOff-location">
+                      <option value="0" selected disabled hidden>Select your city</option>
+                      <option value="C">A Coruña  </option>
+                      <option value="AB">Albacete  </option>
+                      <option value="A">Alicante  </option>
+                      <option value="AL">Almería  </option>
+                      <option value="AN">Andalusia</option>
+                      <option value="VI">Araba / Álava</option>
+                      <option value="AR">Aragon</option>
+                      <option value="BA">Badajoz  </option>
+                      <option value="PM">Balearic Islands</option>
+                      <option value="B">Barcelona  </option>
+                      <option value="PV">Basque Country</option>
+                      <option value="BI">Biscay</option>
+                      <option value="BU">Burgos  </option>
+                      <option value="CC">Cáceres  </option>
+                      <option value="CA">Cádiz  </option>
+                      <option value="CN">Canary Islands</option>
+                      <option value="S">Cantabria</option>
+                      <option value="CS">Castellón  </option>
+                      <option value="CL">Castile and León</option>
+                      <option value="CM">Castile-La Mancha</option>
+                      <option value="CT">Catalonia</option>
+                      <option value="CE">Ceuta</option>
+                      <option value="CR">Ciudad Real  </option>
+                      <option value="MD">Community of Madrid</option>
+                      <option value="CO">Córdoba  </option>
+                      <option value="CU">Cuenca  </option>
+                      <option value="EX">Extremadura</option>
+                      <option value="GA">Galicia</option>
+                      <option value="SS">Gipuzkoa</option>
+                      <option value="GI">Girona  </option>
+                      <option value="GR">Granada  </option>
+                      <option value="GU">Guadalajara  </option>
+                      <option value="H">Huelva  </option>
+                      <option value="HU">Huesca  </option>
+                      <option value="J">Jaén  </option>
+                      <option value="RI">La Rioja</option>
+                      <option value="GC">Las Palmas  </option>
+                      <option value="LE">León  </option>
+                      <option value="L">Lleida  </option>
+                      <option value="LU">Lugo  </option>
+                      <option value="M">Madrid  </option>
+                      <option value="MA">Málaga  </option>
+                      <option value="ML">Melilla</option>
+                      <option value="MU">Murcia  </option>
+                      <option value="NC">Navarre</option>
+                      <option value="OR">Ourense  </option>
+                      <option value="P">Palencia  </option>
+                      <option value="PO">Pontevedra  </option>
+                      <option value="O">  of Asturias</option>
+                      <option value="AV">  of Ávila</option>
+                      <option value="MC">Region of Murcia</option>
+                      <option value="SA">Salamanca  </option>
+                      <option value="TF">Santa Cruz de Tenerife  </option>
+                      <option value="SG">Segovia  </option>
+                      <option value="SE">Seville  </option>
+                      <option value="SO">Soria  </option>
+                      <option value="T">Tarragona  </option>
+                      <option value="TE">Teruel  </option>
+                      <option value="TO">Toledo  </option>
+                      <option value="V">Valencia  </option>
+                      <option value="VC">Valencian Community</option>
+                      <option value="VA">Valladolid  </option>
+                      <option value="ZA">Zamora  </option>
+                      <option value="Z">Zaragoza  </option>
+                  </select>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="date d-flex flex-column">
+                    <span class="date-title">Date</span>
+                    <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput" id="dropOff-date"/>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="time d-flex flex-column">
+                    <span class="time-title">Time
+                    </span>
+                    <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat" id="dropOff-hour"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="RecomendationCar mt-5">
+          <div class="recomendation d-flex justify-content-center">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card " id="sport">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Koenigsegg</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sport</span>
+                  <img src="../assets/img/PopularCar1.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>90L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$99.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card" id="sport">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Nissan GT-R</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sport</span>
+                  <img src="../assets/img/PopularCar3.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$100.00</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card" id="sedan">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Rolls-Royce</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sedan</span>
+                  <img src="../assets/img/PopularCar2.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>70L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$96.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard"id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>CV-R</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <img src="../assets/img/CR-V(black).png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard" id="hatchback">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>MG ZX Exclusice</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Hatchback</span>
+                  <img src="../assets/img/MG-Zx.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>70L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard"id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>New MG ZS</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <img src="../assets/img/MG-ZS.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard"id="hatchback">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>MG ZX Excite</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Hatchback</span>
+                  <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>90L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard" id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>New MG ZS</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <img src="../assets/img/MG-ZS(new).png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card recard" id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>New MG ZS</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <img src="../assets/img/MG-ZS(new).png" class="card-img-top my-5">
+                  <div class="card-body">
+                    <div class="card-body-content d-flex justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                      
+                    </div>
+                    <div class="card-body-sell d-flex justify-content-between my-3">
+                      <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                      <a href="#" class="btn btn-primary">Rent Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="recomendation-sm">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <div class="card recard-sm" id="sport">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Koenigsegg</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sport</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/PopularCar1.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class= "col-12 mb-3">
+                <div class="card recard-sm" id="sedan">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Rolls-Royce</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sedan</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/PopularCar2.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>70L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$96.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class= "col-12 mb-3">
+                <div class="card recard-sm" id="sport">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>Nissan GT-R</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Sport</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/PopularCar3.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$100.00</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card recard-sm" id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>CV-R</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/MG-ZS(new).png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card recard-sm"id="hatchback">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>MG ZX Exclusice</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Hatchback</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/MG-Zx.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>70L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card recard-sm"id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>New MG ZS</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/MG-ZS.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card recard-sm"id="hatchback">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>MG ZX Excite</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">Hatchback</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>90L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>4 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card recard-sm"id="suv">
+                  <div class="card-title d-flex justify-content-between">
+                    <span>New MG ZS</span>
+                    <a class="like"><img src="../assets/img/heart.png"></a>
+                  </div>
+                  <span class="card-genre">SUV</span>
+                  <div class="card-body d-flex">
+                    <img src="../assets/img/MG-ZS(new).png" class="card-img-top">
+                    <div class="card-body-content d-flex flex-column">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>6 People</span>
+                    </div>
+                  </div>
+                  <div class="card-body-sell d-flex justify-content-between my-3">
+                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <nav class="navbar navbar-light bg-light my-4">
+          <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <button class="btn btn-primary ShowMore">Show More Car</button>
+            <a class="navbar-brand count">8 Cars</a>
+          </div>
+        </nav>
       </div>
     </div>
     <footerpartial></footerpartial>

@@ -73,7 +73,7 @@
               <div class="pickUp-gidis d-flex">
                 <div class="location d-flex flex-column">
                   <span class="location-title">Location</span>
-                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir">
+                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir" id="pickUp-location">
                     <option value="0" selected disabled hidden>Select your city</option>
                     <option value="C">A Coruña  </option>
                     <option value="AB">Albacete  </option>
@@ -144,19 +144,19 @@
                 <div class="hr"></div>
                 <div class="date d-flex flex-column">
                   <span class="date-title">Date</span>
-                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput"/>
+                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput" id="pickUp-date"/>
                 </div>
                 <div class="hr"></div>
                 <div class="time d-flex flex-column">
                   <span class="time-title">Time</span>
-                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat"/>
+                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat" id="pickUp-hour"/>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-12 d-flex justify-content-center align-items-center">
             <div class="change">
-              <button class="change-btn">
+              <button class="change-btn" id="changebtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
                   <path d="M5.16051 0.835774L5.16051 14.4536" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M1.08273 4.93188L5.1605 0.835218L9.23828 4.93188" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -170,12 +170,12 @@
             <div class="pickUp">
               <div class="pickUp-title">
                 <span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>
-                Pick-Up
+                Drop-off
               </div>
               <div class="pickUp-gidis d-flex">
                 <div class="location d-flex flex-column">
                   <span class="location-title">Location</span>
-                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir">
+                  <select id="example-getting-started" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="sehir" id="dropOff-location">
                     <option value="0" selected disabled hidden>Select your city</option>
                     <option value="C">A Coruña  </option>
                     <option value="AB">Albacete  </option>
@@ -246,13 +246,13 @@
                 <div class="hr"></div>
                 <div class="date d-flex flex-column">
                   <span class="date-title">Date</span>
-                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput"/>
+                  <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="dateInput" id="dropOff-date"/>
                 </div>
                 <div class="hr"></div>
                 <div class="time d-flex flex-column">
                   <span class="time-title">Time
                   </span>
-                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat"/>
+                  <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat" id="dropOff-hour"/>
                 </div>
               </div>
             </div>
@@ -263,7 +263,7 @@
         <nav class="navbar navbar-light bg-light my-3">
           <div class="container-fluid">
             <a class="navbar-brand">Popular Car</a>
-            <a href="#" class="navbar-brands">View All</a>
+            <a href="CarDetails.html" class="navbar-brands">View All</a>
           </div>
         </nav>
         <div class="row">
@@ -273,7 +273,7 @@
                 <span>Koenigsegg</span>
                 <a class="like"><img src="../assets/img/heart.png"></a>
               </div>
-              <span class="card-genre">sport</span>
+              <span class="card-genre">Sport</span>
               <img src="../assets/img/PopularCar1.png" class="card-img-top my-5">
               <div class="card-body">
                 <div class="card-body-content d-flex justify-content-between mb-4">
@@ -297,7 +297,7 @@
                 <span>Nissan GT-R</span>
                 <a class="like"><img src="../assets/img/heart.png"></a>
               </div>
-              <span class="card-genre">sport</span>
+              <span class="card-genre">Sport</span>
               <img src="../assets/img/PopularCar3.png" class="card-img-top my-5">
               <div class="card-body">
                 <div class="card-body-content d-flex justify-content-between mb-4">

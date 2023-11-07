@@ -324,6 +324,12 @@
                     $(".card").css("display","block");
                 }
               });
+                $(".btnSearch").on("click", function() {
+                  
+
+
+                    
+                });
         },
         utility: {
             cookie: {

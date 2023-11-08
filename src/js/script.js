@@ -233,8 +233,8 @@
             });
 
 
-            
             var clicked=true;
+
               
               $(".like").on("click",function(){
                 if(clicked==true){

@@ -19490,7 +19490,7 @@ header .menu_list .likescount {
   height: 100%;
 }
 .RecomendationCar .card:hover {
-  box-shadow: 1px 2px 7px;
+  box-shadow: 0px 0px 5px -2px;
 }
 .RecomendationCar .card-title span {
   line-height: 150%;

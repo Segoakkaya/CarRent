@@ -225,14 +225,6 @@
 
             var cars= $(".recard").length;                
                 $(".count").text(cars+" Cars");
-
-
-            $(".card").on("click",function(){
-                var likes= $(".icon-Like").length;
-                $(".likescount").text(likes);
-            });
-
-
             var clicked=true;
 
               
@@ -245,6 +237,9 @@
                     $(this).html("<i class='icon-Like'></i>");
                 clicked=true;
             }
+            
+            var likes= $(".icon-Like").length;
+            $(".likescount").text(likes);
             });
 
 
@@ -279,7 +274,7 @@
               $('#suvs').on("click",function() {
                 if ($(this).is(':checked')) {
                 $(".card").css("display","none");
-                $( "div" ).filter( "#suv" ).css( "display", "block");
+                $( "div" ).filter( "#suv" ).css({"display": "block"});
                
                 }
                 else{
@@ -299,7 +294,7 @@
               $('#sedans').on("click",function() {
                 if ($(this).is(':checked')) {
                 $(".card").css("display","none");
-                $( "div" ).filter( "#sedan" ).css( "display", "block");
+                $( "div" ).filter( "#sedan" ).css({"display": "block"});
                 
                 }
                 else{

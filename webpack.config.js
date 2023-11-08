@@ -83,6 +83,13 @@ module.exports = {
             favicon: ''
             // inject: true => Otomatik olarak build dosyasını script tag'ı olarak eklemeyi sağlar.
           }), 
+          new HtmlWebpackPlugin({
+            filename: 'DetailForCar.html',
+            template: './src/pages/DetailForCar.html',
+            inject: 'head',
+            favicon: ''
+            // inject: true => Otomatik olarak build dosyasını script tag'ı olarak eklemeyi sağlar.
+          }), 
           new MiniCssExtractPlugin({
             filename: 'main.min.css'
           }),
@@ -94,17 +101,17 @@ module.exports = {
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_mobilemenu.html'),
             location:'mobilemenu',
-            template_filename:['index.html','CarDetails.html']
+            template_filename:['index.html','CarDetails.html','DetailForCar.html']
           }),
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_header.html'),
             location:'headerpartial',
-            template_filename:['index.html','CarDetails.html']
+            template_filename:['index.html','CarDetails.html','DetailForCar.html']
           }),
           new HtmlWebpackPluginPartials({
             path: path.join(__dirname, './src/partials/_footer.html'),
             location:'footerpartial',
-            template_filename:['index.html','CarDetails.html']
+            template_filename:['index.html','CarDetails.html','DetailForCar.html']
           }),
     ],
     module: {

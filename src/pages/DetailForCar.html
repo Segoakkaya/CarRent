@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <title>Html-Webpack-Template</title>
+  </head>
+    <body data-template="index">
+        <headerpartial></headerpartial>
+        <div class="custom-container-fluid  d-flex m-0 p-0">
+            <div class="d-flex flex-column flex-shrink-0 text-black bg--white sidebar">
+                <div class="check-group-type">
+                  <span class="check-group-type_content">TYPE</span>
+                  <div class="checkbox-wrapper-42">
+                    <input id="sports" type="checkbox" />
+                    <label class="cbx" for="sports"></label>
+                    <label class="lbl" for="sports">Sport <span id="sportcount"></span></label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="suvs" type="checkbox" />
+                    <label class="cbx" for="suvs"></label>
+                    <label class="lbl" for="suvs">Suv <span id="suvcount"></span></label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="mpvs" type="checkbox" />
+                    <label class="cbx" for="mpvs"></label>
+                    <label class="lbl" for="mpvs">MPV <span id="mpvcount"></span></label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="sedans" type="checkbox" />
+                    <label class="cbx" for="sedans"></label>
+                    <label class="lbl" for="sedans">Sedan <span id="sedancount"></span></label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="coupes" type="checkbox" />
+                    <label class="cbx" for="coupes"></label>
+                    <label class="lbl" for="coupes">Coupe <span id="coupecount"></span></label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="hatchbacks" type="checkbox" />
+                    <label class="cbx" for="hatchbacks"></label>
+                    <label class="lbl" for="hatchbacks">Hatchback <span id="hatchbackcount"></span></label>
+                  </div>
+                </div>
+                
+                <div class="check-group-capacity">
+                  <span class="check-group-capacity_content">CAPACITY</span>
+                  <div class="checkbox-wrapper-42">
+                    <input id="2people" type="checkbox" />
+                    <label class="cbx" for="2people"></label>
+                    <label class="lbl" for="2people">2 Person</label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="4people" type="checkbox" />
+                    <label class="cbx" for="4people"></label>
+                    <label class="lbl" for="4people">4 Person</label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="6people" type="checkbox" />
+                    <label class="cbx" for="6people"></label>
+                    <label class="lbl" for="6people">6 Person</label>
+                  </div>
+                  <div class="checkbox-wrapper-42">
+                    <input id="8people" type="checkbox" />
+                    <label class="cbx" for="8people"></label>
+                    <label class="lbl" for="8people">8 Person or More</label>
+                  </div>
+                </div>
+                <div class="check-group-price">
+                  <span class="check-group-price_content">PRICE</span>
+                  <div class="check-group-price_value">$0.00</div>
+                  <div class="range">  
+                    <input type="range" id="range1" step="20" value="00"/>
+                  </div>
+                  <span class="check-group-price_maxvalue">Max. $100.00 </span>
+                </div>
+            </div>
+            <div class="detailbody d-flex flex-column">
+                <section class="informations">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="informations-box1">
+                                <div class="informations-box1-fluid">
+                                    <div class="informations-box1-fluid_title">Sports car with the best design and acceleration</div>
+                                    <div class="informations-box1-fluid_content">Safety and comfort while driving a futuristic and elegant sports car</div>
+                                    <img src="../assets/img/PopularCar3.png" class="informations-box1-fluid_content">
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="../assets/img/PopularCar3.png">
+                                    </div>
+                                    
+                                    <div class="col-4">
+                                        <img src="../assets/img/minimg1.png">
+                                    </div>
+                                    
+                                    <div class="col-4">
+                                        <img src="../assets/img/minigm2.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="informations-box2">
+                                <div class="card">
+                                    <div class="card-title d-flex justify-content-between"id="Koenigsegg">
+                                        <span>Koenigsegg</span>
+                                        <a class="like"><img src="../assets/img/heart.png"></a>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footerpartial></footerpartial>
+    </body>
+  </html>

@@ -261,46 +261,54 @@
                 var sedancount=$("div #sedan").length;
                 $("#sedancount").text("("+sedancount+")");
 
+
+
+
             $('#sports').on("click",function() {
                 if ($(this).is(':checked')) {
-                $(".card").css("display","none");
-                $( "div" ).filter( "#sport").css( "display", "block");
+                $(".card").parent().css("display","none");
+                $( "div" ).filter( "#sport").parent().css( "display", "block");
                 
                 }
                 else{
-                    $(".card").css("display","block");
+                    $(".card").parent().css("display","block");
                 }
               });
               $('#suvs').on("click",function() {
                 if ($(this).is(':checked')) {
-                $(".card").css("display","none");
-                $( "div" ).filter( "#suv" ).css({"display": "block"});
+                $(".suv").parents().css("display","none");
+                $( "div" ).filter( ".suv" ).parent().css({"display": "block"});
                
                 }
                 else{
-                    $(".card").css("display","block");
+                    $(".card").parent().css("display","block");
                 }
               });
               $('#hatchbacks').on("click",function() {
                 if ($(this).is(':checked')) {
-                $(".card").css("display","none");
-                $( "div" ).filter( "#hatchback" ).css( "display", "block");
+                $(".card").parent().css("display","none");
+                $( "div" ).filter( "#hatchback" ).parent().css( "display", "block");
                 
                 }
                 else{
-                    $(".card").css("display","block");
+                    $(".card").parent().css("display","block");
                 }
               });
               $('#sedans').on("click",function() {
                 if ($(this).is(':checked')) {
-                $(".card").css("display","none");
-                $( "div" ).filter( "#sedan" ).css({"display": "block"});
+                $(".card").parent().css("display","none");
+                $( "div" ).filter( "#sedan" ).parent().css({"display": "block"});
                 
                 }
                 else{
-                    $(".card").css("display","block");
+                    $(".card").parent().css("display","block");
                 }
               });
+
+
+
+
+
                 $(".btnSearch").on("click", function() {
                   if($(".filterText").val()=="Koenigsegg"){
                     $(".card").css("display","none");

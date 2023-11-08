@@ -204,14 +204,14 @@
               $('input[name="saat"]').val('Select Your Time');
 
             $('.popularCarousel').owlCarousel({
+                center: true,
+                items:2,
                 loop:true,
-                nav:false,
-                autoplay:true,
-                autoplayTimeout:3000,
-                autoplayHoverPause:false,
+                margin:20,
                 responsive:{
                     0:{
-                        items:1
+                        items:1,
+                        stagePadding: 50
                     },
                     600:{
                         items:2
@@ -223,24 +223,8 @@
             })
 
 
-            var cars= $(".recard").length;
-            $(".recomendation").on("mousemove",function(){
-                
+            var cars= $(".recard").length;                
                 $(".count").text(cars+" Cars");
-            });
-            $(".recomendation-sm").on("mousemove",function(){
-                var cars= $(".recard-sm").length;
-                $(".count").text(cars+" Cars");
-            });
-            $(".ShowMore").on("click",function(){
-                if($(".recard-sm").length<120){
-                $(".recomendation").append($(".recomendation").html());
-                $(".recomendation-sm").append($(".recomendation-sm").html());
-                }
-                else{
-                    alert("No More Car To Show!");
-                }
-            });
 
 
             $(".card").on("click",function(){
@@ -250,16 +234,16 @@
 
 
             
-            var clicked=false;
+            var clicked=true;
               
               $(".like").on("click",function(){
-                if(clicked==false){
+                if(clicked==true){
                     $(this).html("<img src='../assets/img/heart.png'>");
-                clicked=true;
+                clicked=false;
             }
                 else{
                     $(this).html("<i class='icon-Like'></i>");
-                clicked=false;
+                clicked=true;
             }
             });
 
@@ -273,16 +257,14 @@
                 $(".sidebar").toggleClass("slideopen");
             });
 
-            $("body").on("load",function(){
-                var sportcount=$("#sport").length;
-                $("#sportcount").text(sportcount);
-                var hatchbackcount=$("#hatchback").length;
-                $("#hatchbackcount").text(hatchbackcount);
-                var suvcount=$("#suv").length;
-                $("#suvcount").text(suvcount);
-                var sedancount=$("#sedan").length;
-                $("#sedancount").text(sedancount);
-            });
+                var sportcount=$("div #sport").length;
+                $("#sportcount").text("("+sportcount+")");
+                var hatchbackcount=$("div #hatchback").length;
+                $("#hatchbackcount").text("("+hatchbackcount+")");
+                var suvcount=$("div #suv").length;
+                $("#suvcount").text("("+suvcount+")");
+                var sedancount=$("div #sedan").length;
+                $("#sedancount").text("("+sedancount+")");
 
             $('#sports').on("click",function() {
                 if ($(this).is(':checked')) {
@@ -336,6 +318,25 @@
                   else if($(".filterText").val()=="Rolls-Royce"){
                     $(".card").css("display","none");
                     $( ".card-title" ).filter( "#Rolls-Royce" ).parent().css( "display", "block");
+                  }
+                  else if($(".filterText").val()=="MG ZS"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#MGZS" ).parent().css( "display", "block");
+                  }
+                  
+                  else if($(".filterText").val()=="Terios"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#Terios" ).parent().css( "display", "block");
+                  }
+                  
+                  else if($(".filterText").val()=="MG ZX"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#MGZX" ).parent().css( "display", "block");
+                  }
+                  
+                  else if($(".filterText").val()=="CR-V"){
+                    $(".card").css("display","none");
+                    $( ".card-title" ).filter( "#CVR" ).parent().css( "display", "block");
                   }
                   else{
                     $(".card").css("display","block");

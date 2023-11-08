@@ -16973,7 +16973,7 @@ table {
   font-weight: 799 !important;
 }
 
-.font-weight--800, .recomendation-sm .card-body-sell-day, .recomendation-sm .card-body-sell-money, .recomendation-sm .card-genre, .recomendation-sm .card-title span, .RecomendationCar .card-body-sell-day, .RecomendationCar .card-body-sell-money, .RecomendationCar .card-genre, .RecomendationCar .card-title span, .popularCar .card-body-sell-day, .popularCar .card-body-sell-money, .popularCar .card-genre, .popularCar .card-title span {
+.font-weight--800, .RecomendationCar .card-body-sell-day, .RecomendationCar .card-body-sell-money, .RecomendationCar .card-genre, .RecomendationCar .card-title span, .popularCar .card-body-sell-day, .popularCar .card-body-sell-money, .popularCar .card-genre, .popularCar .card-title span {
   font-weight: 800 !important;
 }
 
@@ -19464,33 +19464,6 @@ header .menu_list .likescount {
 
 .popularCar-sm {
   display: none;
-  overflow: visible;
-  position: relative;
-}
-.popularCar-sm .owl-item {
-  width: 400px;
-}
-.popularCar-sm .owl-item .item {
-  width: 350px;
-}
-.popularCar-sm .owl-item.active {
-  width: 400px !important;
-}
-.popularCar-sm .filter {
-  background: linear-gradient(90deg, transparent 90%, white);
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  top: 0px;
-  right: 0px;
-  z-index: 9;
-}
-.popularCar-sm .card {
-  width: 100%;
-  max-height: 600px;
-}
-.popularCar-sm .card:hover {
-  box-shadow: none;
 }
 
 .RecomendationCar .navbar-brand {
@@ -19517,7 +19490,7 @@ header .menu_list .likescount {
   height: 100%;
 }
 .RecomendationCar .card:hover {
-  box-shadow: 1px 2px 13px;
+  box-shadow: 1px 2px 7px;
 }
 .RecomendationCar .card-title span {
   line-height: 150%;
@@ -19544,6 +19517,7 @@ header .menu_list .likescount {
 }
 .RecomendationCar .card-body-content {
   font-size: 14px;
+  color: #90A3BF;
 }
 .RecomendationCar .card-body-content i {
   font-size: 14px;
@@ -19555,58 +19529,6 @@ header .menu_list .likescount {
   color: #000000;
 }
 .RecomendationCar .card-body-sell-day {
-  font-size: 14px;
-  color: #90A3BF;
-}
-
-.recomendation-sm {
-  display: none;
-}
-.recomendation-sm .card {
-  padding: 24px;
-  border: none;
-  transition: 0.3s all;
-  height: 100%;
-}
-.recomendation-sm .card:hover {
-  box-shadow: 1px 2px 13px;
-}
-.recomendation-sm .card-title span {
-  line-height: 150%;
-  font-size: 20px;
-}
-.recomendation-sm .card-title i {
-  font-size: 24px;
-  color: #90A3BF;
-}
-.recomendation-sm .card-title .like {
-  text-decoration: none;
-  color: #90A3BF;
-}
-.recomendation-sm .card-genre {
-  font-size: 14px;
-  line-height: 10%;
-  color: #90A3BF;
-}
-.recomendation-sm .card-img-top {
-  padding: 16px;
-}
-.recomendation-sm .card-body {
-  text-wrap: wrap;
-}
-.recomendation-sm .card-body-content {
-  font-size: 14px;
-}
-.recomendation-sm .card-body-content i {
-  font-size: 14px;
-  margin-left: 5px;
-  color: #90A3BF;
-}
-.recomendation-sm .card-body-sell-money {
-  font-size: 20px;
-  color: #000000;
-}
-.recomendation-sm .card-body-sell-day {
   font-size: 14px;
   color: #90A3BF;
 }
@@ -19686,15 +19608,10 @@ header .menu_list .likescount {
     gap: 10px;
   }
   .recomendation {
-    display: none;
     gap: 20px;
-  }
-  .recomendation .row {
-    gap: 20px;
-    display: none;
   }
   .recomendation .card {
-    padding: 10px;
+    padding: 20px;
   }
   .recomendation .card-body-content {
     display: flex;
@@ -19702,36 +19619,6 @@ header .menu_list .likescount {
   }
   .recomendation .card-body-sell {
     gap: 10px;
-  }
-  .recomendation-sm {
-    display: block;
-  }
-  .recomendation-sm .row {
-    gap: 20px;
-  }
-  .recomendation-sm .card {
-    padding: 25px;
-  }
-  .recomendation-sm .card-body {
-    align-items: center;
-    justify-content: space-between;
-  }
-  .recomendation-sm .card-body .card-img-top {
-    width: 221px;
-    padding: 0px !important;
-  }
-  .recomendation-sm .card-body-content {
-    align-items: start;
-    justify-content: space-between;
-    width: 70px;
-    font-size: 12px;
-    height: 100px;
-  }
-  .recomendation-sm .card-body-content .icon-Car {
-    margin-left: 5px;
-  }
-  .recomendation-sm .card-body-sell {
-    text-align: center;
   }
 }
 @media (max-width: 991.96px) {
@@ -19800,8 +19687,29 @@ header .menu_list .likescount {
   }
   .popularCar-sm {
     display: block;
+    overflow: visible;
+    position: relative;
   }
-  .popularCar .row {
+  .popularCar-sm .owl-stage {
+    padding-left: 0 !important;
+  }
+  .popularCar-sm .filter {
+    background: linear-gradient(90deg, transparent 3%, white);
+    position: absolute;
+    width: 90px;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 9;
+  }
+  .popularCar-sm .card {
+    width: 100%;
+    max-height: 600px;
+  }
+  .popularCar-sm .card:hover {
+    box-shadow: none;
+  }
+  .popularCar .popularCar-lg {
     display: none;
   }
 }
@@ -19907,10 +19815,6 @@ header .menu_list .likescount {
   box-shadow: -407px 0 0 400px #3563E9;
 }
 
-.sSs {
-  width: 80%;
-}
-
 .carbody {
   padding: 32px;
   width: 100%;
@@ -19931,9 +19835,6 @@ header .menu_list .likescount {
   .timer .pickUp-gidis {
     gap: 5px !important;
   }
-  .sSs {
-    width: 100% !important;
-  }
 }
 @media (max-width: 1199.96px) {
   .timer .pickUp {
@@ -19941,6 +19842,9 @@ header .menu_list .likescount {
   }
 }
 @media (max-width: 991.96px) {
+  .carbody {
+    padding: 10px;
+  }
   .custom-container-fluid {
     position: relative;
   }

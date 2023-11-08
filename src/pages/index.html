@@ -6,7 +6,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <title>Html-Webpack-Template</title>
   </head>
@@ -266,23 +267,32 @@
             <a href="CarDetails.html" class="navbar-brands">View All</a>
           </div>
         </nav>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
-              <div class="card-title d-flex justify-content-between">
+        <div class="row popularCar-lg">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card" id="sport">
+              <div class="card-title d-flex justify-content-between"id="Koenigsegg">
                 <span>Koenigsegg</span>
                 <a class="like"><img src="../assets/img/heart.png"></a>
               </div>
               <span class="card-genre">Sport</span>
-              <img src="../assets/img/PopularCar1.png" class="card-img-top my-5">
-              <div class="card-body">
-                <div class="card-body-content d-flex justify-content-between mb-4">
-                  <span><i class="icon-gas-station"></i>90L</span>
-                  
-                  <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
 
-                  <span><i class="icon-profile-2user"></i>2 People</span>
-                  
+              <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-7 p-0">
+                  <img src="../assets/img/PopularCar1.png" class="card-img-top my-lg-5 my-3 p-0">
+                </div>
+                <div class="col-lg-12 col-4 p-0">
+                  <div class="card-body">
+                    <div class="card-body-content d-lg-flex d-block justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>90L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                      
+                    </div>
+                 
+                  </div>
                 </div>
                 <div class="card-body-sell d-flex justify-content-between my-3">
                   <span class="card-body-sell-money">$99.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
@@ -290,23 +300,38 @@
                 </div>
               </div>
             </div>
+              
+              
+            </div>
+
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
-              <div class="card-title d-flex justify-content-between">
+
+
+            <div class="card" id="sport">
+              <div class="card-title d-flex justify-content-between"id="Koenigsegg">
                 <span>Nissan GT-R</span>
                 <a class="like"><img src="../assets/img/heart.png"></a>
               </div>
               <span class="card-genre">Sport</span>
-              <img src="../assets/img/PopularCar3.png" class="card-img-top my-5">
-              <div class="card-body">
-                <div class="card-body-content d-flex justify-content-between mb-4">
-                  <span><i class="icon-gas-station"></i>80L</span>
-                  
-                  <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
 
-                  <span><i class="icon-profile-2user"></i>2 People</span>
-                  
+              <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-7 p-0">
+                  <img src="../assets/img/PopularCar3.png" class="card-img-top my-lg-5 my-3 p-0">
+                </div>
+                <div class="col-lg-12 col-4 p-0">
+                  <div class="card-body">
+                    <div class="card-body-content d-lg-flex d-block justify-content-between mb-4">
+                      <span><i class="icon-gas-station"></i>80L</span>
+                      
+                      <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+    
+                      <span><i class="icon-profile-2user"></i>2 People</span>
+                      
+                    </div>
+                 
+                  </div>
                 </div>
                 <div class="card-body-sell d-flex justify-content-between my-3">
                   <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$100.00</span></span>
@@ -314,6 +339,11 @@
                 </div>
               </div>
             </div>
+              
+              
+            </div>
+
+
           </div>
           <div class="col-lg-3 col-md-6 col-12">
             <div class="card">
@@ -467,394 +497,1144 @@
           </div>
         </div>
       </section>
+
+
       <section class="RecomendationCar">
         <nav class="navbar navbar-light bg-light my-4">
           <div class="container-fluid">
             <a class="navbar-brand">Recomendation Car</a>
           </div>
         </nav>
-         <div class="recomendation">
+        <div class="recomendation" data-lazy data-lazy-item="1" data-lazy-show="1" data-lazy-selector=".row" data-lazy-button="#showMore">
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>All New Rush</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
                 <span class="card-genre">Suv</span>
-                <img src="../assets/img/RushCar.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>70L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/RushCar.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
+
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>CR-V</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <img src="../assets/img/CR-V.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>All New Terios</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <img src="../assets/img/Terios.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>90L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/Terios.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
-                  <span>CV-R</span>
-                  <a class="like"><img src="../assets/img/heart.png"></a>
-                </div>
-                <span class="card-genre">SUV</span>
-                <img src="../assets/img/CR-V(black).png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
-                  </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
-                  <span>MG ZX Exclusice</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="CRV">
+                  <span>CR-V</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
                 <span class="card-genre">Hatchback</span>
-                <img src="../assets/img/MG-Zx.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>70L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>4 People</span>
-                    
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V(black).png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard ">
-                <div class="card-title d-flex justify-content-between">
-                  <span>New MG ZS</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Exclusie</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <img src="../assets/img/MG-ZS.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-Zx.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
                   <span>MG ZX Excite</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
                 <span class="card-genre">Hatchback</span>
-                <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>90L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>4 People</span>
-                    
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="card recard">
-                <div class="card-title d-flex justify-content-between">
-                  <span>New MG ZS</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <img src="../assets/img/MG-ZS(new).png" class="card-img-top my-5">
-                <div class="card-body">
-                  <div class="card-body-content d-flex justify-content-between mb-4">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                    
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body-sell d-flex justify-content-between my-3">
-                    <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                    <a href="#" class="btn btn-primary">Rent Now</a>
-                  </div>
-                </div>
+                  
               </div>
             </div>
           </div>
-         </div>
-         <div class="recomendation-sm">
           <div class="row">
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>All New Rush</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/RushCar.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>70L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/RushCar.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
+                  
               </div>
+
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>CR-V</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/CR-V.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
                   <span>All New Terios</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/Terios.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>90L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/Terios.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
-                  <span>CV-R</span>
-                  <a class="like"><img src="../assets/img/heart.png"></a>
-                </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/MG-ZS(new).png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
-                  </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
-                  <span>MG ZX Exclusice</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="CRV">
+                  <span>CR-V</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
                 <span class="card-genre">Hatchback</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/MG-Zx.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>70L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>4 People</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V(black).png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
-                  <span>New MG ZS</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Exclusie</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/MG-ZS.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-Zx.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
                   <span>MG ZX Excite</span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
                 <span class="card-genre">Hatchback</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>90L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>4 People</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
-                </div>
+                  
               </div>
             </div>
-            <div class="col-12">
-              <div class="card recard-sm">
-                <div class="card-title d-flex justify-content-between">
-                  <span>New MG ZS</span>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
                   <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <span class="card-genre">SUV</span>
-                <div class="card-body d-flex">
-                  <img src="../assets/img/MG-ZS(new).png" class="card-img-top">
-                  <div class="card-body-content d-flex flex-column">
-                    <span><i class="icon-gas-station"></i>80L</span>
-                    
-                    <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
-  
-                    <span><i class="icon-profile-2user"></i>6 People</span>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
                   </div>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>All New Rush</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
-                <div class="card-body-sell d-flex justify-content-between my-3">
-                  <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
-                  <a href="#" class="btn btn-primary">Rent Now</a>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/RushCar.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>CR-V</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
                 </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>All New Terios</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/Terios.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="CRV">
+                  <span>CR-V</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V(black).png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Exclusie</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-Zx.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Excite</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>All New Rush</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/RushCar.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$72.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>CR-V</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="All New Rush">
+                  <span>All New Terios</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/Terios.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="CRV">
+                  <span>CR-V</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/CR-V(black).png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Exclusie</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-Zx.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>70L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$76.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">$80.00</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="hatchbacks">
+                <div class="card-title d-flex justify-content-between"id="MGZX">
+                  <span>MG ZX Excite</span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Hatchback</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZX-Excite.png" class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>90L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Electric</span>
+          
+                            <span><i class="icon-profile-2user"></i>4 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$74.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <div class="card recard" id="suvs">
+                <div class="card-title d-flex justify-content-between"id="MGZS">
+                  <span>New MG ZS </span>
+                  <a class="like"><img src="../assets/img/heart.png"></a>
+                </div>
+                <span class="card-genre">Suv</span>
+
+                  <div class="container-fluid">
+                    <div class="row d-flex">
+                      <div class="col-lg-12 col-7 p-0 my-3">
+                        <img src="../assets/img/MG-ZS.png " class="card-img-top my-lg-5 my-3 p-0">
+                      </div>
+                      <div class="col-lg-12 col-4">
+                        <div class="card-body p-0 my-4">
+                          <div class="card-body-content d-lg-flex flex-lg-row flex-column justify-content-between gap-3">
+                            <span><i class="icon-gas-station"></i>80L</span>
+                            
+                            <span><span class="icon-Car"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span>Manual</span>
+          
+                            <span><i class="icon-profile-2user"></i>6 People</span>
+                            
+                          </div>
+                      
+                        </div>
+                      </div>
+                      <div class="card-body-sell d-flex justify-content-between my-3">
+                        <span class="card-body-sell-money">$80.00/<span class="card-body-sell-day">day</span><br><span class="card-body-sell-day">&nbsp;</span></span>
+                        <a href="#" class="btn btn-primary">Rent Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  
               </div>
             </div>
           </div>
@@ -863,11 +1643,92 @@
       <nav class="navbar navbar-light bg-light my-4">
         <div class="container-fluid">
           <a class="navbar-brand"></a>
-          <button class="btn btn-primary ShowMore">Show More Car</button>
+          <button class="btn btn-primary ShowMore" id="showMore">Show More Car</button>
           <a class="navbar-brand count">8 Cars</a>
         </div>
       </nav>
     </div>
+    
+
+
+    <!-- <section class="page-history pb-5">
+      <div class="custom-container w4">
+      <div class="page-history__timeline" data-lazy data-lazy-item="1" data-lazy-show="1" data-lazy-selector=".page-history__item" data-lazy-button="#timeline-lazy-button" >
+          <div class="page-history__item row justify-content-between flex-column-reverse flex-md-row">
+          <div class="page-history__item__column col-md-6 order-md-1 order-2" data-aos="fade-in">
+              <div class="page-history__item__img">
+              <img src="./assets/images/image-38.jpg" class="img-fuild d-block w-100" alt="" />
+              </div>
+          </div>
+         
+          <div class="page-history__item__column col-md-6 order-md-2 order-1  bg--white" data-aos="fade-in">
+              <div class="page-history__item__year">2022</div>
+             
+              <h2 class="page-history__item__title">Integer sit amet nulla pretium, sagittis mi eu, interdum enim.
+              </h2>
+              <p>Nullam molestie tempus ex ac egestas. Nullam nisl ipsum, pulvinar ac felis vitae, suscipit volutpat nibh. Integer sit amet malesuada erat.</p>
+         
+          </div>
+          </div>
+          <div class="page-history__item row justify-content-between flex-column-reverse flex-md-row">
+          <div class="page-history__item__column col-md-6 text-md-right  bg--white" data-aos="fade-in">
+              <div class="page-history__item__year">2021</div>
+         
+              <h2 class="page-history__item__title">Integer sit amet nulla pretium, sagittis mi eu, interdum enim.
+              </h2>
+              <p>Nullam molestie tempus ex ac egestas. Nullam nisl ipsum, pulvinar ac felis vitae, suscipit volutpat nibh. Integer sit amet malesuada erat.</p>
+         
+          </div>
+          <div class="page-history__item__column col-md-6" data-aos="fade-in">
+              <div class="page-history__item__img">
+                  <img src="./assets/images/image-39.jpg" class="img-fuild d-block w-100" alt="" />
+         
+              </div>
+          </div>
+          </div>
+          <div class="page-history__item row justify-content-between flex-column-reverse flex-md-row">
+          <div class="page-history__item__column col-md-6 order-md-1 order-2" data-aos="fade-in">
+              <div class="page-history__item__img">
+                  <img src="./assets/images/image-40.jpg" class="img-fuild d-block w-100" alt="" />
+             
+              </div>
+          </div>
+          <div class="page-history__item__column col-md-6 order-md-2 order-1  bg--white" data-aos="fade-in">
+              <div class="page-history__item__year">2019</div>
+         
+              <h2 class="page-history__item__title">Integer sit amet nulla pretium, sagittis mi eu, interdum enim.
+              </h2>
+              <p>Nullam molestie tempus ex ac egestas. Nullam nisl ipsum, pulvinar ac felis vitae, suscipit volutpat nibh. Integer sit amet malesuada erat.</p>
+             
+          </div>
+          </div>
+
+          <div class="page-history__item row justify-content-between flex-column-reverse flex-md-row">
+              <div class="page-history__item__column col-md-6 text-md-right  bg--white" data-aos="fade-in">
+              <div class="page-history__item__year">2013</div>
+             
+                  <h2 class="page-history__item__title">Integer sit amet nulla pretium, sagittis mi eu, interdum enim.
+                  </h2>
+                  <p>Nullam molestie tempus ex ac egestas. Nullam nisl ipsum, pulvinar ac felis vitae, suscipit volutpat nibh. Integer sit amet malesuada erat.</p>
+         
+              </div>
+              <div class="page-history__item__column col-md-6" data-aos="fade-in">
+              <div class="page-history__item__img">
+                  <img src="./assets/images/image-39.jpg" class="img-fuild d-block w-100" alt="" />
+             
+              </div>
+              </div>
+          </div>
+
+      </div>
+      <div class="text-center mt-5" data-aos="fade-in">
+          <a href="javascript:void(0);" class="btn load-more" id="timeline-lazy-button">LOAD MORE</a>
+      </div>
+      </div>
+  </section> -->
+
+
+
     <footerpartial></footerpartial>
   </body>
 </html>

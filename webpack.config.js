@@ -12,6 +12,8 @@ module.exports = {
     entry: {
         app: [
           './src/js/plugins/jquery.mobilemenu.js',
+          './src/js/plugins/jquery.lazyloading.js',
+
           './src/app.js',
           './src/app.scss'
         ]

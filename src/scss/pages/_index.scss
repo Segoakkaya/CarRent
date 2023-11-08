@@ -256,33 +256,7 @@
 }
 .popularCar-sm{
     display: none;
-    overflow: visible;
-    position: relative;
-    .owl-item{
-        width:400px;
-        .item{
-            width: 350px;
-        }
-        &.active{
-            width: 400px !important;
-        }
-    }
-     .filter{
-        background:linear-gradient(90deg,transparent 90%,white);
-        position: absolute;
-        width: 100%;
-        height: 500px;
-        top: 0px;
-        right: 0px;
-        z-index: 9;
-     }
-    .card{
-        width: 100%;
-        max-height: 600px;
-        &:hover{
-            box-shadow: none;
-        }
-    }
+
 }
 .RecomendationCar{
     .navbar{
@@ -304,14 +278,13 @@
             text-decoration: none;
         }
     }
-    
     .card{
         padding: 24px;
         border: none;
         transition: 0.3s all;
         height: 100%;
         &:hover{
-            box-shadow: 1px 2px 13px;
+            box-shadow: 1px 2px 7px;
         }
         &-title{
             span{
@@ -346,66 +319,7 @@
                     color: $color--Secondinary-Light-300;
                 }
                 font-size: 14px;
-            }
-            &-sell{
-                
-                &-money{
-                    font-size: 20px;
-                    @extend .font-weight--800;
-                    color: $color--black;
-                    }
-                &-day{
-                    font-size: 14px;
-                    color: $color--Secondinary-Light-300;
-                    @extend .font-weight--800;
-                }
-            }
-        }
-    }
-}
-.recomendation-sm{
-    display: none;
-    .card{
-        padding: 24px;
-        border: none;
-        transition: 0.3s all;
-        height: 100%;
-        &:hover{
-            box-shadow: 1px 2px 13px;
-        }
-        &-title{
-            span{
-                @extend .font-weight--800;
-                line-height: 150%;
-                font-size: 20px;
-            }
-            i{
-                font-size: 24px;
                 color: $color--Secondinary-Light-300;
-            }
-            .like{
-                text-decoration: none;
-                color: $color--Secondinary-Light-300;
-            }
-        }
-        &-genre{
-         @extend .font-weight--800;
-         font-size: 14px;
-         line-height: 10%;
-         color:$color--Secondinary-Light-300;
-        }
-        &-img-top{
-            padding: 16px;
-        }
-        &-body{
-            text-wrap: wrap;
-            &-content{
-                i{
-                    font-size: 14px;
-                    margin-left: 5px;
-                    color: $color--Secondinary-Light-300;
-                }
-                font-size: 14px;
             }
             &-sell{
                 
@@ -516,14 +430,9 @@
         }
     }
     .recomendation{
-        display: none;
         gap: 20px;
-        .row{
-            gap: 20px;
-            display: none;
-        }
         .card{
-            padding: 10px;
+            padding: 20px;
             &-body{
                 &-content{
                     display: flex;
@@ -535,37 +444,6 @@
             }
         }
     }
-    .recomendation-sm{
-        .row{
-            gap: 20px;
-        }
-        display: block;
-        .card{
-            padding: 25px;
-            &-body{
-                .card-img-top{
-                    width: 221px;
-                    padding: 0px !important;
-                }
-                align-items: center;
-                justify-content: space-between;
-                &-content{
-                    align-items: start;
-                    justify-content: space-between;
-                    width: 70px;
-                    font-size: 12px;
-                    height: 100px;
-                    .icon-Car{
-                        margin-left: 5px;
-                    }
-                }
-                &-sell{
-                    text-align: center;
-                }
-            }
-        }
-    }
-
  }
 @include media-breakpoint-down(md)  { 
     .row{
@@ -642,8 +520,30 @@
     
 .popularCar-sm{
     display: block;
+    overflow: visible;
+    position: relative;
+.owl-stage{
+    padding-left: 0 !important;
 }
-    .popularCar{.row{
+     .filter{
+        background: linear-gradient(90deg, transparent 3%, white);
+        position: absolute;
+        width: 90px;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+        z-index: 9;
+     }
+    .card{
+        width: 100%;
+        max-height: 600px;
+        &:hover{
+            box-shadow: none;
+        }
+    }
+}
+    .popularCar{
+        .popularCar-lg{
         display: none;
         }
     }

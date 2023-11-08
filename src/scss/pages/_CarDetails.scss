@@ -112,9 +112,6 @@
     }
 }
 }
-.sSs{
-  width: 80%;
-}
 .carbody{
   padding: 32px;
   width: 100%;
@@ -136,9 +133,6 @@
         }
     }
 }
-.sSs{
-  width: 100% !important;
-}
 }
 @include media-breakpoint-down(lg)  {
   .timer{
@@ -148,6 +142,9 @@
   }
 }
 @include media-breakpoint-down(md)  {
+  .carbody{
+    padding: 10px;
+  }
   .custom-container-fluid{
     position: relative;
   }

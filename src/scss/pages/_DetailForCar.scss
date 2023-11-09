@@ -5,11 +5,12 @@
         &-box1{
             &-fluid{
                 background-image: url("assets/img/card-background-2.png");
-                height: 360px;
+                background-size: cover;
+                height: 500px;
                 padding: 24px;
                 position: relative;
                 border-radius: 10px;
-                transition: 0.5s all;
+                transition: 0.3s ease;
                 &_title{
                     color:#FFF;
                     font-size: 32px;
@@ -38,8 +39,8 @@
                 }
             }
             &_carImg{
-                width:148px;
-                height: 124px;
+                width:230px;
+                height: 200px;
                 border-radius: 10px;
                 position:relative;
                 padding: 0px;

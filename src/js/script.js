@@ -276,15 +276,15 @@
                         });
                         $(".miniBtn2").on("click",function(){
                             $(".informations-box1-fluid img").hide();
-                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minimg1.png')","background-repeat":"no-repeat","background-size":"100%"});
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minimg1.png')","background-repeat":"no-repeat","background-size":"cover"});
                         });
                         $(".miniBtn3").on("click",function(){
                             $(".informations-box1-fluid img").hide();
-                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minigm2.png')","background-repeat":"no-repeat","background-size":"100%"});
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minigm2.png')","background-repeat":"no-repeat","background-size":"cover"});
                         });
                         $(".miniBtn").on("click",function(){
                             $(".informations-box1-fluid img").show();
-                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/card-background-2.png')","background-repeat":"no-repeat","background-size":"100%"});
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/card-background-2.png')","background-repeat":"no-repeat","background-size":"cover"});
                         });
         },
         utility: {

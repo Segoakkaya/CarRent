@@ -19826,19 +19826,184 @@ header .menu_list .likescount {
   height: 100%;
 }
 
+.timers .pickUp {
+  height: 132px;
+  border-radius: 10px;
+  background-color: white;
+  padding-left: 40px;
+  padding-top: 24px;
+  padding-right: 48px;
+  padding-bottom: 24px;
+}
+.timers .pickUp-gidis {
+  gap: 18px;
+  margin-top: 16px;
+}
+.timers .pickUp-gidis .hr {
+  width: 2px;
+  margin-top: -6px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.timers .pickUp-gidis-title {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.timers .pickUp-gidis .location {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.timers .pickUp-gidis .location select {
+  color: #90A3BF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  border: 1px solid white;
+}
+.timers .pickUp-gidis .date {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.timers .pickUp-gidis .date input {
+  color: #90A3BF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  border: none;
+}
+.timers .pickUp-gidis .time {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.timers .pickUp-gidis .time input {
+  color: #90A3BF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  border: none;
+}
+.timers .pickUp-gidis .location-title {
+  font-size: 16px;
+}
+.timers .pickUp-gidis .location select {
+  font-size: 14px;
+  width: 130px;
+}
+.timers .pickUp-gidis .date-title {
+  font-size: 16px;
+}
+.timers .pickUp-gidis .date input {
+  font-size: 14px;
+  width: 130px;
+}
+.timers .pickUp-gidis .time-title {
+  font-size: 16px;
+}
+.timers .pickUp-gidis .time input {
+  font-size: 14px;
+  width: 130px;
+}
+.timers .change {
+  border-radius: 15px;
+  z-index: 9;
+}
+.timers .change-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #1A37A7;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
 @media (max-width: 1440px) {
-  .timer .pickUp {
+  .timers .pickUp {
     padding-left: 13px !important;
     padding-top: 24px;
     border-radius: 10px;
   }
-  .timer .pickUp-gidis {
+  .timers .pickUp-gidis {
     gap: 5px !important;
+  }
+  .timers .pickUp-gidis .location-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .location select {
+    font-size: 12px;
+    width: 115px;
+  }
+  .timers .pickUp-gidis .date-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .date input {
+    font-size: 12px;
+    width: 115px;
+  }
+  .timers .pickUp-gidis .time-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .time input {
+    font-size: 12px;
+    width: 115px;
   }
 }
 @media (max-width: 1199.96px) {
-  .timer .pickUp {
+  .timers .pickUp {
+    height: 132px;
+    padding-left: 15px !important;
+    padding-top: 24px;
+    border-radius: 10px;
+  }
+  .timers .pickUp-gidis {
+    gap: 5px !important;
+  }
+  .timers .pickUp-gidis .location-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .location select {
     font-size: 12px;
+    width: 110px;
+  }
+  .timers .pickUp-gidis .date-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .date input {
+    font-size: 12px;
+    width: 110px;
+  }
+  .timers .pickUp-gidis .time-title {
+    font-size: 14px;
+  }
+  .timers .pickUp-gidis .time input {
+    font-size: 12px;
+    width: 110px;
+  }
+  .sidebar {
+    position: absolute;
+    left: -300px;
+    transition: 0.3s all;
   }
 }
 @media (max-width: 991.96px) {
@@ -19848,10 +20013,35 @@ header .menu_list .likescount {
   .custom-container-fluid {
     position: relative;
   }
-  .sidebar {
-    position: absolute;
-    left: -300px;
-    transition: 0.3s all;
+  .timers .pickUp {
+    height: 132px;
+    padding-left: 15px !important;
+    padding-top: 24px;
+    border-radius: 10px;
+  }
+  .timers .pickUp-gidis {
+    gap: 5px !important;
+  }
+  .timers .pickUp-gidis .location-title {
+    font-size: 16px;
+  }
+  .timers .pickUp-gidis .location select {
+    font-size: 12px;
+    width: 110px;
+  }
+  .timers .pickUp-gidis .date-title {
+    font-size: 16px;
+  }
+  .timers .pickUp-gidis .date input {
+    font-size: 12px;
+    width: 110px;
+  }
+  .timers .pickUp-gidis .time-title {
+    font-size: 16px;
+  }
+  .timers .pickUp-gidis .time input {
+    font-size: 12px;
+    width: 110px;
   }
 }
 .checkbox-wrapper-42 input[type=checkbox] {
@@ -20006,4 +20196,59 @@ header .menu_list .likescount {
   to {
     transform: scale(1, 1);
   }
+}
+.detailbody {
+  padding: 32px;
+  width: 100%;
+}
+.detailbody .informations-box1-fluid {
+  background-image: url(assets/images/card-background-2.png);
+  height: 360px;
+  padding: 24px;
+  position: relative;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+.detailbody .informations-box1-fluid_title {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+  max-width: 372px;
+}
+.detailbody .informations-box1-fluid_content {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  max-width: 284px;
+}
+.detailbody .informations-box1-fluid_img {
+  width: 380px;
+  height: 120px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 24px;
+  right: 170px;
+}
+.detailbody .informations-box1_carImg {
+  width: 148px;
+  height: 124px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0px;
+  border: none;
+  transition: 0.3s all;
+}
+.detailbody .informations-box1_carImg img {
+  border-radius: 10px;
+  height: 100%;
+}
+.detailbody .informations-box1_carImg:focus {
+  border: 2px solid #3563E9;
+  padding: 5px;
 }

@@ -241,9 +241,6 @@
             var likes= $(".icon-Like").length;
             $(".likescount").text(likes);
             });
-
-
-
             $("#range1").on("change",function(){
                 var value=$(this).val();
                 $(".check-group-price_value").text(" $"+value+".00")
@@ -252,99 +249,43 @@
                 $(".sidebar").toggleClass("slideopen");
             });
 
-                var sportcount=$("div #sport").length;
+                var sportcount=$(".sport").length;
                 $("#sportcount").text("("+sportcount+")");
-                var hatchbackcount=$("div #hatchback").length;
+                var hatchbackcount=$(".hatchback").length;
                 $("#hatchbackcount").text("("+hatchbackcount+")");
-                var suvcount=$("div #suv").length;
+                var suvcount=$(".suv").length;
                 $("#suvcount").text("("+suvcount+")");
-                var sedancount=$("div #sedan").length;
+                var sedancount=$("div .sedan").length;
                 $("#sedancount").text("("+sedancount+")");
-
-
-
-
-            $('#sports').on("click",function() {
-                if ($(this).is(':checked')) {
-                $(".card").parent().css("display","none");
-                $( "div" ).filter( "#sport").parent().css( "display", "block");
-                
-                }
-                else{
-                    $(".card").parent().css("display","block");
-                }
-              });
-              $('#suvs').on("click",function() {
-                if ($(this).is(':checked')) {
-                $(".suv").parents().css("display","none");
-                $( "div" ).filter( ".suv" ).parent().css({"display": "block"});
-               
-                }
-                else{
-                    $(".card").parent().css("display","block");
-                }
-              });
-              $('#hatchbacks').on("click",function() {
-                if ($(this).is(':checked')) {
-                $(".card").parent().css("display","none");
-                $( "div" ).filter( "#hatchback" ).parent().css( "display", "block");
-                
-                }
-                else{
-                    $(".card").parent().css("display","block");
-                }
-              });
-              $('#sedans').on("click",function() {
-                if ($(this).is(':checked')) {
-                $(".card").parent().css("display","none");
-                $( "div" ).filter( "#sedan" ).parent().css({"display": "block"});
-                
-                }
-                else{
-                    $(".card").parent().css("display","block");
-                }
-              });
-
-
-
-
-
-                $(".btnSearch").on("click", function() {
-                  if($(".filterText").val()=="Koenigsegg"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#Koenigsegg" ).parent().css( "display", "block");
-                  }
-                  else if($(".filterText").val()=="Nissan"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#Nissan" ).parent().css( "display", "block");
-                  }
-                  else if($(".filterText").val()=="Rolls-Royce"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#Rolls-Royce" ).parent().css( "display", "block");
-                  }
-                  else if($(".filterText").val()=="MG ZS"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#MGZS" ).parent().css( "display", "block");
-                  }
-                  
-                  else if($(".filterText").val()=="Terios"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#Terios" ).parent().css( "display", "block");
-                  }
-                  
-                  else if($(".filterText").val()=="MG ZX"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#MGZX" ).parent().css( "display", "block");
-                  }
-                  
-                  else if($(".filterText").val()=="CR-V"){
-                    $(".card").css("display","none");
-                    $( ".card-title" ).filter( "#CVR" ).parent().css( "display", "block");
-                  }
-                  else{
-                    $(".card").css("display","block");
-                  }
-                });
+                        $(document).ready(function () {
+                            $('.brand-checkbox').change(function () {
+                                var anyCheckboxChecked = $('.brand-checkbox:checked').length > 0;
+                                if (!anyCheckboxChecked) {
+                                    // Hiçbir checkbox seçili değilse, tüm kartları göster
+                                    $('.card').parent().removeClass('d-none');
+                                } else {
+                                    // En az bir checkbox seçili ise, sadece seçilenleri göster
+                                    $('.card').parent().addClass('d-none');
+                                    $('.brand-checkbox:checked').each(function () {
+                                        var brand = $(this).data('brand');
+                                        console.log(brand);
+                                        $('.' + brand).parent().removeClass('d-none');
+                                    });
+                                }
+                            });
+                        });
+                        $(".miniBtn2").on("click",function(){
+                            $(".informations-box1-fluid img").hide();
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minimg1.png')","background-repeat":"no-repeat","background-size":"100%"});
+                        });
+                        $(".miniBtn3").on("click",function(){
+                            $(".informations-box1-fluid img").hide();
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/minigm2.png')","background-repeat":"no-repeat","background-size":"100%"});
+                        });
+                        $(".miniBtn").on("click",function(){
+                            $(".informations-box1-fluid img").show();
+                            $(".informations-box1-fluid").css({"background-image":"url('assets/img/card-background-2.png')","background-repeat":"no-repeat","background-size":"100%"});
+                        });
         },
         utility: {
             cookie: {

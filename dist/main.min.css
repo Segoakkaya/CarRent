@@ -20204,11 +20204,11 @@ header .menu_list .likescount {
 .detailbody .informations-box1-fluid {
   background-image: url(assets/images/card-background-2.png);
   background-size: cover;
-  height: 500px;
+  height: 400px;
   padding: 24px;
   position: relative;
   border-radius: 10px;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 .detailbody .informations-box1-fluid_title {
   color: #FFF;
@@ -20234,12 +20234,14 @@ header .menu_list .likescount {
   flex-shrink: 0;
   position: absolute;
   bottom: 24px;
-  right: 170px;
+  margin: 0px 170px;
 }
 .detailbody .informations-box1_carImg {
-  width: 230px;
-  height: 200px;
+  width: 148px;
+  height: 124px;
+  flex-shrink: 0;
   border-radius: 10px;
+  margin: 2px;
   position: relative;
   padding: 0px;
   border: none;
@@ -20252,4 +20254,199 @@ header .menu_list .likescount {
 .detailbody .informations-box1_carImg:focus {
   border: 2px solid #3563E9;
   padding: 5px;
+}
+.detailbody .informations-box2 {
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detailbody .informations-box2_title {
+  display: flex;
+  justify-content: space-between;
+}
+.detailbody .informations-box2_title span {
+  color: #1A202C;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+}
+.detailbody .informations-box2_title a {
+  text-decoration: none;
+}
+.detailbody .informations-box2_title i {
+  font-size: 24px;
+}
+.detailbody .informations-box2_title-Reviewer {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  gap: 8px;
+}
+.detailbody .informations-box2_content {
+  margin-top: 34px;
+  color: #596780;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: -0.4px;
+}
+.detailbody .informations-box2_content .About {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 44px;
+  width: 100%;
+  margin-top: 34px;
+}
+.detailbody .informations-box2_content .About-genre {
+  color: #90A3BF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.detailbody .informations-box2_content .About-genre b {
+  color: #596780;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+.detailbody .informations-box2-sell {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.detailbody .informations-box2-sell .btnSell {
+  display: flex;
+  width: 140px;
+  height: 56px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.detailbody .informations-box2-money {
+  color: #1A202C;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.detailbody .informations-box2-money_day {
+  color: #90A3BF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 1440px) {
+  .informations-box1-fluid {
+    width: 492px;
+    max-height: 360px !important;
+  }
+  .informations-box1-fluid_img {
+    margin: 0px 50px !important;
+  }
+}
+@media (max-width: 1199.96px) {
+  .informations-box1-fluid {
+    width: 100% !important;
+  }
+  .informations-box1-fluid_img {
+    width: 230px !important;
+    height: 100px !important;
+    flex-shrink: 0;
+    margin: 0px 20px !important;
+  }
+  .informations-box1_carImg {
+    width: 130px !important;
+    height: 90px !important;
+    flex-shrink: 0;
+  }
+  .informations-box2 {
+    margin-top: 20px;
+  }
+  .informations-box2_title {
+    font-size: 22px !important;
+  }
+  .informations-box2_title-Reviewer {
+    margin-top: 10px;
+  }
+  .informations-box2_content {
+    margin-top: 10px !important;
+  }
+  .informations-box2_content span {
+    font-size: 14px !important;
+  }
+  .informations-box2_content .About {
+    font-size: 14px !important;
+  }
+  .informations-box2_content .About b {
+    font-size: 14px !important;
+  }
+  .informations-box2-money {
+    font-size: 22px !important;
+  }
+  .informations-box2-money_day {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 991.96px) {
+  .informations-box1-fluid {
+    width: 100% !important;
+  }
+  .informations-box1-fluid_img {
+    width: 190px !important;
+    height: 60px !important;
+    flex-shrink: 0;
+    margin: 0px 20px !important;
+  }
+  .informations-box1_carImg {
+    width: 90px !important;
+    height: 60px !important;
+    flex-shrink: 0;
+  }
+  .informations-box2 {
+    margin-top: 20px;
+  }
+  .informations-box2_title {
+    font-size: 20px !important;
+  }
+  .informations-box2_title-Reviewer {
+    margin-top: 10px;
+  }
+  .informations-box2_content {
+    margin-top: 10px !important;
+  }
+  .informations-box2_content span {
+    font-size: 12px !important;
+  }
+  .informations-box2_content .About {
+    font-size: 12px !important;
+  }
+  .informations-box2_content .About b {
+    font-size: 12px !important;
+  }
+  .informations-box2-money {
+    font-size: 20px !important;
+  }
+  .informations-box2-money_day {
+    font-size: 12px !important;
+  }
 }

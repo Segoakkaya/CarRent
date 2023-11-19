@@ -20354,6 +20354,83 @@ header .menu_list .likescount {
   font-weight: 700;
   line-height: normal;
 }
+.detailbody .reviews {
+  margin-top: 32px;
+  padding: 24px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFF;
+}
+.detailbody .reviews .baslik {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.detailbody .reviews .reviewCount {
+  color: var(--primary-0, #FFF);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background-color: #3563E9;
+}
+.detailbody .reviews .showReview {
+  display: flex;
+  width: 132px;
+  height: 44px;
+  padding: 0px 20px;
+  border: 1px solid #90A3BF;
+  border-radius: 8px;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #90A3BF;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.detailbody .reviews .review {
+  width: 100%;
+}
+.detailbody .reviews .review-user-title {
+  width: 100%;
+}
+.detailbody .reviews .review-user-title b {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.detailbody .reviews .review-user-title .smalltext {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.detailbody .reviews .review-text {
+  color: #596780;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: -0.28px;
+}
 
 @media (max-width: 1440px) {
   .informations-box1-fluid {
@@ -20448,5 +20525,12 @@ header .menu_list .likescount {
   }
   .informations-box2-money_day {
     font-size: 12px !important;
+  }
+  .profileImg {
+    width: 50px;
+    height: 50px;
+  }
+  .review-user-title b {
+    font-size: 16px;
   }
 }

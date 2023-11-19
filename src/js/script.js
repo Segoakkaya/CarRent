@@ -225,6 +225,8 @@
 
             var cars= $(".recard").length;                
                 $(".count").text(cars+" Cars");
+                var review= $(".review").length;                
+                $(".reviewCount").text(review);
             var clicked=true;
 
               

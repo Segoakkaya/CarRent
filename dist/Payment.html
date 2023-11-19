@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <title>Html-Webpack-Template</title>
+  <script defer src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head>
+    <body data-template="index">
+        <headerpartial><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="custom-container-partial">
+        <header class="header-lg">
+            <div class="row">
+                <div class="col-md-2 col-6 d-flex text-center">
+                    <span class="logo">MORENT</span>
+                </div>
+                <div class="col-md-8 col-12 d-flex text-center">
+                    <div class="input-group mb-3">
+                        <button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button>
+                        <input type="text" class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button>
+                      </div>
+                </div>
+                <div class="col-md-2 col-6 d-flex text-center justify-content-end">
+                    <ul class="menu_list d-flex">
+                        <li class="likes">
+                            <div class="menu_list-item">
+                                <span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span>
+                            </div>
+                        </li>
+                        <li class="notification">
+                            <div class="menu_list-item position-relative"><span class="icon-notification"></span><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span></div>
+                            
+                        </li>
+                        <li class="setting">
+                            <div class="menu_list-item"><span class="icon-setting-2"></span></div>
+                        </li>
+                        <li class="profile order-1">
+                            <div class="menu_list"><img src="../assets/img/Profil.png"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <header class="header-sm">
+            <div class="row">
+                <div class="col-6 d-flex text-center">
+                    <span class="logo">MORENT</span>
+                </div>
+                <div class="col-6 d-flex text-center justify-content-end">
+                    <ul class="menu_list d-flex">
+                        <li class="profile">
+                            <div class="menu_list-profile mb-4"><img src="../assets/img/Profil.png"></div>
+                        </li>
+                        <li class="likes">
+                            <div class="menu_list-item">
+                                <span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span>
+                            </div>
+                        </li>
+                        <li class="notification">
+                            <div class="menu_list-item"><span class="icon-notification"></span></div>
+                        </li>
+                        <li class="setting">
+                            <div class="menu_list-item"><span class="icon-setting-2"></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex text-center justify-content-between">
+                    <div class="input-group mb-3">
+                        <button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button>
+                        <input type="text" class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                      <button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html></headerpartial>
+        <div class="payment-container">
+            <div class="row">
+                <div class="col-lg-8 col-12 order-md-1 order-1">
+                    <div class="bilingInfo">
+                        <span class="bilingInfo-title">Biling Info</span>
+                        <div class="d-flex justify-content-between"><span class="bilingInfo_smallText">Plase enter your biling info</span><span class="bilingInfo_smallText">Sten 1 of 4</span></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="Name">Name</label><br>
+                                <input type="text" id="Name" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="Phone">Phone Number</label><br>
+                                <input type="number" id="Phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="Addres">Adress</label><br>
+                                <input type="text" id="Adress" placeholder="Adress">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="Town">Town/City</label><br>
+                                <input type="text" id="Town" placeholder="Town Or City">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 order-lg-1">
+                    <div class="Rental">
+                        <span class="Rental-title">Rental Summary</span>
+                        <div class="Rental-smallText">Prices may change depending on the length of the rental and the price of your rental car.</div>
+                        <div class="Rental_carAbout d-flex justify-content-between aling-item-center">
+                            <img src="../assets/img/minimg.png" class="Rental_carAbout_img">
+                            <div class="Rental_carAbout-text d-flex flex-column">
+                                <span class="Rental_carAbout-text-title">Nissan GT-R</span>
+                                <span class="Rental_carAbout-text-smallText"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star-bos.png"> 440+ Reviewer</span>
+                            </div>
+                        </div>
+                        <div class="Rental_total">
+                            <div class="Rental_total-subtotal d-flex justify-content-between">
+                                <span class="Rental_total-subtotal-smallText">Subtotal</span>
+                                <span class="Rental_total-subtotal-price">$80.00</span>
+                            </div>
+                            <div class="Rental_total-Tax d-flex justify-content-between">
+                                <span class="Rental_total-Tax-smallText">Tax</span>
+                                <span class="Rental_total-Tax-price">$0</span>
+                            </div>
+                        </div>
+                        <div class="Rental_promo">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control Rental_promo-input" placeholder="Apply Promo Code" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <button class="btn Rental_promo-btn" type="button" id="button-addon1">Apply Now</button>
+                            </div>
+                        </div>
+                        <div class="Rental_price d-flex justify-content-between">
+                            <div class="Rental_price-title d-flex flex-column">
+                                <span class="Rental_price-title_bold">Total Rental Price</span>
+                                <span class="Rental_price-title_smallText">Overall price and includes rental discount</span>
+                            </div>
+                            <span class="Rental_price-money">
+                                $80.00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

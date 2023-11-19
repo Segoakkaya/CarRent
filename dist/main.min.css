@@ -18255,6 +18255,10 @@ body {
   background: #F6F7F9;
 }
 
+.payment-container {
+  margin: 32px;
+}
+
 .custom-container {
   margin-left: 60px;
   margin-right: 60px;
@@ -20533,4 +20537,207 @@ header .menu_list .likescount {
   .review-user-title b {
     font-size: 16px;
   }
+}
+.bilingInfo {
+  background-color: #FFF;
+  padding: 24px;
+  border-radius: 10px;
+}
+.bilingInfo-title {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.bilingInfo_smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.bilingInfo label {
+  margin-top: 24px;
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.bilingInfo input {
+  width: 386px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: none;
+  background: #F6F7F9;
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.28px;
+  padding-left: 32px;
+}
+
+.Rental {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px;
+}
+.Rental-title {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  letter-spacing: -0.6px;
+}
+.Rental-smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.Rental_carAbout {
+  margin-top: 32px;
+  align-items: center;
+}
+.Rental_carAbout_img {
+  width: 132px;
+  border-radius: 8px;
+}
+.Rental_carAbout-text {
+  margin-left: 25px;
+}
+.Rental_carAbout-text-title {
+  color: #1A202C;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+}
+.Rental_carAbout-text-smallText {
+  color: #596780;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.Rental_total {
+  margin-top: 54px;
+}
+.Rental_total-subtotal {
+  margin-bottom: 24px;
+}
+.Rental_total-subtotal-smallText {
+  color: #90A3BF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.Rental_total-subtotal-price {
+  color: #1A202C;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.Rental_total-Tax {
+  margin-bottom: 32px;
+}
+.Rental_total-Tax-smallText {
+  color: #90A3BF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.Rental_total-Tax-price {
+  color: #1A202C;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.Rental_promo-input {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  border-radius: 10px;
+  background: #F6F7F9;
+  height: 56px;
+  border: none;
+  padding: 16px;
+}
+.Rental_promo-input::placeholder {
+  color: #90A3BF;
+}
+.Rental_promo-input:focus {
+  background-color: #F6F7F9;
+  box-shadow: none;
+}
+.Rental_promo-btn {
+  border: none;
+  padding: 16px;
+  color: #1A202C;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  height: 56px;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  border-radius: 10px;
+  background: #F6F7F9;
+}
+.Rental_promo-btn:focus {
+  background-color: #F6F7F9;
+  box-shadow: none;
+}
+.Rental_promo-btn:hover {
+  background-color: #F6F7F9;
+  box-shadow: none;
+}
+.Rental_price-title_bold {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.Rental_price-title_smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.Rental_price-money {
+  color: #1A202C;
+  text-align: right;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

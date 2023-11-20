@@ -18232,20 +18232,6 @@ input, textarea {
   outline: none !important;
 }
 
-input[name=date] {
-  background-image: url(assets/images/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 117px 6px;
-  background-size: 9px;
-}
-
-input[name=saat] {
-  background-image: url(assets/images/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: 117px 6px;
-  background-size: 9px;
-}
-
 html {
   -webkit-font-smoothing: antialiased;
   background: #F6F7F9;
@@ -18285,6 +18271,9 @@ body {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .payment-container {
+    margin: 24px;
   }
 }
 header .logo {
@@ -20238,7 +20227,7 @@ header .menu_list .likescount {
   flex-shrink: 0;
   position: absolute;
   bottom: 24px;
-  margin: 0px 170px;
+  margin: 0px 70px;
 }
 .detailbody .informations-box1_carImg {
   width: 148px;
@@ -20438,11 +20427,7 @@ header .menu_list .likescount {
 
 @media (max-width: 1440px) {
   .informations-box1-fluid {
-    width: 492px;
     max-height: 360px !important;
-  }
-  .informations-box1-fluid_img {
-    margin: 0px 50px !important;
   }
 }
 @media (max-width: 1199.96px) {
@@ -20450,8 +20435,6 @@ header .menu_list .likescount {
     width: 100% !important;
   }
   .informations-box1-fluid_img {
-    width: 230px !important;
-    height: 100px !important;
     flex-shrink: 0;
     margin: 0px 20px !important;
   }
@@ -20493,8 +20476,8 @@ header .menu_list .likescount {
     width: 100% !important;
   }
   .informations-box1-fluid_img {
-    width: 190px !important;
-    height: 60px !important;
+    width: 260px !important;
+    height: 92px !important;
     flex-shrink: 0;
     margin: 0px 20px !important;
   }
@@ -20579,7 +20562,7 @@ header .menu_list .likescount {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
   letter-spacing: -0.28px;
   padding-left: 32px;
 }
@@ -20594,7 +20577,8 @@ header .menu_list .likescount {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 30px */
+  line-height: 150%;
+  /* 30px */
   letter-spacing: -0.6px;
 }
 .Rental-smallText {
@@ -20740,4 +20724,349 @@ header .menu_list .likescount {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.rentalInfo {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px;
+  margin-top: 32px;
+}
+.rentalInfo-title {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.rentalInfo_smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.rentalInfo-content {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  margin-top: 32px;
+}
+.rentalInfo label {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  margin-top: 24px;
+}
+.rentalInfo-select {
+  width: 386px;
+  height: 56px;
+  border: none;
+  padding-left: 32px;
+  padding-right: 21px;
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  border-radius: 10px;
+  background: #F6F7F9;
+}
+.rentalInfo-input {
+  width: 386px;
+  height: 56px;
+  border: none;
+  padding-left: 32px;
+  padding-right: 21px;
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  border-radius: 10px;
+  background: #F6F7F9;
+}
+
+.paymentMethod {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px;
+  margin-top: 32px;
+}
+.paymentMethod-title {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.paymentMethod_smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.paymentMethod .acordion {
+  background-color: #F6F7F9;
+  border: none;
+  margin-top: 32px;
+  border-radius: 8px;
+}
+.paymentMethod .acordion_head {
+  padding: 24px;
+  margin-left: 24px;
+  width: 100%;
+  position: relative;
+}
+.paymentMethod .acordion_head label {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.paymentMethod .acordion_head img {
+  position: absolute;
+  right: 24px;
+}
+.paymentMethod .acordion_body {
+  padding-left: 24px;
+  background-color: #F6F7F9;
+}
+.paymentMethod .acordion_body .card-body {
+  border: none;
+  background-color: #F6F7F9;
+}
+.paymentMethod .acordion_body .card-body label {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-top: 24px;
+  letter-spacing: -0.32px;
+}
+.paymentMethod .acordion_body .card-body input {
+  width: 362px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+  border: none;
+  padding: 16px;
+}
+
+.confirmation {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px;
+  margin-top: 32px;
+}
+.confirmation-title {
+  color: #1A202C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.6px;
+}
+.confirmation_smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+.confirmation label {
+  color: #1F2544;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+  border-radius: 10px;
+  background: #F6F7F9;
+  width: 100%;
+  padding: 16px 32px;
+  margin-top: 32px;
+}
+.confirmation input {
+  margin-right: 20px;
+}
+.confirmation-btn {
+  margin-top: 20px;
+  display: flex;
+  width: 140px;
+  height: 56px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.confirmation img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 2.001px 2.667px 1.966px 2.625px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.confirmation .layer-title {
+  color: #1A202C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+.confirmation .layer-smallText {
+  color: #90A3BF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.28px;
+}
+
+@media (max-width: 1440px) {
+  .bilingInfo input {
+    width: 350px !important;
+  }
+  .rentalInfo-select {
+    width: 350px !important;
+  }
+  .rentalInfo-input {
+    width: 350px !important;
+  }
+  .paymentMethod .card-body input {
+    width: 350px !important;
+  }
+}
+@media (max-width: 1199.96px) {
+  .bilingInfo input {
+    width: 300px !important;
+  }
+  .rentalInfo-select {
+    width: 300px !important;
+  }
+  .rentalInfo-input {
+    width: 300px !important;
+  }
+  .paymentMethod .card-body input {
+    width: 300px !important;
+  }
+}
+@media (max-width: 991.96px) {
+  .Rental-title {
+    font-size: 16px;
+  }
+  .Rental-smallText {
+    font-size: 12px;
+  }
+  .Rental_carAbout-text-title {
+    font-size: 20px;
+  }
+  .Rental_promo-input {
+    font-size: 12px;
+  }
+  .Rental_promo-btn {
+    font-size: 12px;
+  }
+  .Rental_price-title_bold {
+    font-size: 16px;
+  }
+  .Rental_price-title_smallText {
+    font-size: 12px;
+  }
+  .Rental_price-money {
+    font-size: 20px;
+  }
+  .bilingInfo {
+    margin-top: 32px;
+  }
+  .bilingInfo-title {
+    font-size: 16px;
+  }
+  .bilingInfo_smallText {
+    font-size: 12px;
+  }
+  .bilingInfo label {
+    font-size: 14px;
+  }
+  .bilingInfo input {
+    width: 100% !important;
+  }
+  .rentalInfo-title {
+    font-size: 16px;
+  }
+  .rentalInfo_smallText {
+    font-size: 12px;
+  }
+  .rentalInfo label {
+    font-size: 14px;
+  }
+  .rentalInfo-select {
+    width: 100% !important;
+  }
+  .rentalInfo-input {
+    width: 100% !important;
+  }
+  .paymentMethod-title {
+    font-size: 16px;
+  }
+  .paymentMethod_smallText {
+    font-size: 12px;
+  }
+  .paymentMethod label {
+    font-size: 14px;
+  }
+  .paymentMethod .acordion_body {
+    padding: 5px;
+  }
+  .paymentMethod .card-body input {
+    width: 100% !important;
+  }
+  .confirmation-title {
+    font-size: 16px;
+  }
+  .confirmation_smallText {
+    font-size: 12px;
+  }
+  .confirmation input {
+    margin-right: 5px;
+  }
+  .confirmation label {
+    font-size: 12px;
+  }
+  .confirmation .layer-title {
+    font-size: 16px;
+  }
+  .confirmation .layer-smallText {
+    font-size: 12px;
+  }
 }

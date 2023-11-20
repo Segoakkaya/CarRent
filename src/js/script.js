@@ -288,6 +288,13 @@
                             $(".informations-box1-fluid img").show();
                             $(".informations-box1-fluid").css({"background-image":"url('assets/img/card-background-2.png')","background-repeat":"no-repeat"});
                         });
+                        $("#r11").on("click", function () {
+                            $(this).parent().find("a").trigger("click");
+                          });
+                          
+                          $("#r12").on("click", function () {
+                            $(this).parent().find("a").trigger("click");
+                          });                          
         },
         utility: {
             cookie: {

@@ -39,7 +39,7 @@
                     flex-shrink: 0;
                     position: absolute;
                     bottom: 24px;
-                    margin: 0px 170px;
+                    margin: 0px 70px;
                 }
             }
             &_carImg {
@@ -255,12 +255,7 @@
     .informations {
         &-box1 {
             &-fluid {
-                width:492px;
                 max-height: 360px !important;
-
-                &_img {
-                    margin: 0px 50px !important;
-                }
             }
         }
     }
@@ -272,8 +267,6 @@
             &-fluid {
             width: 100% !important;
             &_img {
-                width: 230px !important;
-                height: 100px !important;
                 flex-shrink: 0;
                     margin: 0px 20px !important;
                 }
@@ -320,8 +313,8 @@
             &-fluid {
             width: 100% !important;
             &_img {
-                width: 190px !important;
-                height: 60px !important;
+                width: 260px !important;
+                height: 92px !important;            
                 flex-shrink: 0;
                     margin: 0px 20px !important;
                 }

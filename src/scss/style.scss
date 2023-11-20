@@ -6,7 +6,8 @@ html {
 
 body{
     background: #F6F7F9;
-
+    overflow-x: hidden;
+    touch-action: pan-y;
  }
 .payment-container{
     margin: 32px;

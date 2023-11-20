@@ -19410,7 +19410,6 @@ header .menu_list .likescount {
   padding: 24px;
   border: none;
   transition: 0.3s all;
-  max-width: 432px;
 }
 .popularCar .card:hover {
   box-shadow: 1px 2px 13px;
@@ -20227,7 +20226,7 @@ header .menu_list .likescount {
   flex-shrink: 0;
   position: absolute;
   bottom: 24px;
-  margin: 0px 70px;
+  margin: 0px 171px;
 }
 .detailbody .informations-box1_carImg {
   width: 148px;
@@ -20428,6 +20427,9 @@ header .menu_list .likescount {
 @media (max-width: 1440px) {
   .informations-box1-fluid {
     max-height: 360px !important;
+  }
+  .informations-box1-fluid_img {
+    margin: 0px 50px !important;
   }
 }
 @media (max-width: 1199.96px) {

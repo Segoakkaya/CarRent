@@ -39,7 +39,7 @@
                     flex-shrink: 0;
                     position: absolute;
                     bottom: 24px;
-                    margin: 0px 70px;
+                    margin: 0px 171px;
                 }
             }
             &_carImg {
@@ -256,6 +256,9 @@
         &-box1 {
             &-fluid {
                 max-height: 360px !important;
+                &_img{
+                margin: 0px 50px !important;
+                }
             }
         }
     }

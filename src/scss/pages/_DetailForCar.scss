@@ -308,6 +308,9 @@
 }
 
 @include media-breakpoint-down(md) {
+    .detailbody{
+        padding: 20px;
+    }
     .informations {
         &-box1 {
             &-fluid {

@@ -20472,6 +20472,9 @@ header .menu_list .likescount {
   }
 }
 @media (max-width: 991.96px) {
+  .detailbody {
+    padding: 20px;
+  }
   .informations-box1-fluid {
     width: 100% !important;
   }

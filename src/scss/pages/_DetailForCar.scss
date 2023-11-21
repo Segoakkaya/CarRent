@@ -1,18 +1,96 @@
+.outer {
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 17px;
+}
+
+#thumbs .item {
+    max-height: 170px;
+    min-width: 96px;
+    max-width: 100%;
+    line-height: 70px;
+    padding: 0px;
+    color: black;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#thumbs .item h1 {
+    font-size: 18px;
+}
+
+#thumbs .current .item {
+    padding: 10px;
+    border: 2px solid $color--Primary;
+    border-radius: 17px;
+}
+
+#thumbs .current .item img {
+    max-height: 140px;
+    transition: all .5s ease-in-out;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.owl-theme .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+}
+
+#big.owl-theme {
+    position: relative;
+}
+
+#big.owl-theme .owl-next,
+#big.owl-theme .owl-prev {
+    display: none;
+    background: #333;
+    width: 22px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+
+#big.owl-theme .owl-prev {
+    left: 10px;
+}
+
+#big.owl-theme .owl-next {
+    right: 10px;
+}
+
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev {
+    background: #333;
+}
+
+.outer {
+    .item {
+        img {
+            border-radius: 17px;
+        }
+    }
+}
+
+
+
+
 .detailbody {
     padding: 32px;
     width: 100%;
 
     .informations {
         &-box1 {
-            &-fluid {
-                background-image: url("assets/img/card-background-2.png");
-                background-size: cover;
-                height: 400px;
-                padding: 24px;
-                position: relative;
-                border-radius: 10px;
-                transition: 0.3s;
-
+            &-fluid{
+                &-background{
+                    position: relative;
+                }
                 &_title {
                     color: #FFF;
                     font-size: 32px;
@@ -21,8 +99,12 @@
                     line-height: 150%;
                     letter-spacing: -0.96px;
                     max-width: 372px;
+                    position: absolute;
+                    top: 24px;
+                    left: 24px;
+                    right: 24px;
                 }
-
+    
                 &_content {
                     color: #FFF;
                     font-size: 16px;
@@ -31,36 +113,19 @@
                     line-height: 150%;
                     letter-spacing: -0.32px;
                     max-width: 284px;
+                    position: absolute;
+                    top: 124px;
+                    left: 24px;
                 }
-
+    
                 &_img {
                     width: 380px;
                     height: 120px;
                     flex-shrink: 0;
                     position: absolute;
                     bottom: 24px;
-                    margin: 0px 171px;
-                }
-            }
-            &_carImg {
-                width: 148px;
-                height: 124px;
-                flex-shrink: 0;
-                border-radius: 10px;
-                margin: 2px;
-                position: relative;
-                padding: 0px;
-                border: none;
-                transition: 0.3s all;
-
-                img {
-                    border-radius: 10px;
-                    height: 100%;
-                }
-
-                &:focus {
-                    border: 2px solid $color--Primary;
-                    padding: 5px;
+                    left: 25%;
+                    right: 25%;
                 }
             }
         }
@@ -74,6 +139,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             &_title {
                 display: flex;
                 justify-content: space-between;
@@ -102,22 +168,25 @@
                     gap: 8px;
                 }
             }
-            &_content{
-                margin-top:34px;
-                color:$color--Secondinary-Light-400;
+
+            &_content {
+                margin-top: 34px;
+                color: $color--Secondinary-Light-400;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 200%;
                 letter-spacing: -0.4px;
-                .About{
+
+                .About {
                     display: inline-flex;
                     align-items: flex-start;
                     gap: 44px;
                     width: 100%;
                     margin-top: 34px;
-                    &-genre{
-                        color:$color--Secondinary-Light-300;
+
+                    &-genre {
+                        color: $color--Secondinary-Light-300;
                         font-size: 20px;
                         font-style: normal;
                         font-weight: 400;
@@ -126,23 +195,26 @@
                         width: 50%;
                         display: flex;
                         justify-content: space-between;
-                        b{
-                                color: $color--Secondinary-Light-400;
-                                text-align: right;
-                                font-size: 20px;
-                                font-style: normal;
-                                font-weight: 600;
-                                line-height: 150%;
-                                letter-spacing: -0.4px;
+
+                        b {
+                            color: $color--Secondinary-Light-400;
+                            text-align: right;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 150%;
+                            letter-spacing: -0.4px;
                         }
                     }
                 }
             }
-            &-sell{
+
+            &-sell {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 32px;
-                .btnSell{
+
+                .btnSell {
                     display: flex;
                     width: 140px;
                     height: 56px;
@@ -153,15 +225,17 @@
                     flex-shrink: 0;
                 }
             }
-            &-money{
+
+            &-money {
                 color: $color--Secondinary;
                 font-size: 28px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                &_day{
-                    color:$color--Secondinary-Light-300;
-                    font-size:16px;
+
+                &_day {
+                    color: $color--Secondinary-Light-300;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
@@ -169,21 +243,24 @@
             }
         }
     }
-    .reviews{
+
+    .reviews {
         margin-top: 32px;
         padding: 24px;
         width: 100%;
         border-radius: 10px;
         background-color: #FFF;
-        .baslik{
-            color:$color--Secondinary;
+
+        .baslik {
+            color: $color--Secondinary;
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
             letter-spacing: -0.4px;
         }
-        .reviewCount{
+
+        .reviewCount {
             color: var(--primary-0, #FFF);
             text-align: center;
             font-size: 14px;
@@ -194,7 +271,8 @@
             border-radius: 8px;
             background-color: $color--Primary;
         }
-        .showReview{
+
+        .showReview {
             display: flex;
             width: 132px;
             height: 44px;
@@ -207,7 +285,7 @@
             margin-top: 24px;
             gap: 8px;
             flex-shrink: 0;
-            color:$color--Secondinary-Light-300;
+            color: $color--Secondinary-Light-300;
             text-align: center;
             font-size: 16px;
             font-style: normal;
@@ -215,13 +293,15 @@
             line-height: 150%;
             letter-spacing: -0.32px;
         }
-        .review{
+
+        .review {
             width: 100%;
-            
-            &-user{
-                &-title{
+
+            &-user {
+                &-title {
                     width: 100%;
-                    b{
+
+                    b {
                         color: $color--Secondinary;
                         font-size: 20px;
                         font-style: normal;
@@ -229,17 +309,19 @@
                         line-height: 150%;
                         letter-spacing: -0.6px;
                     }
-                    .smalltext{
+
+                    .smalltext {
                         color: $color--Secondinary-Light-300;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%;
-                        letter-spacing:-0.28px;
+                        letter-spacing: -0.28px;
                     }
                 }
             }
-            &-text{
+
+            &-text {
                 color: $color--Secondinary-Light-400;
                 font-size: 14px;
                 font-style: normal;
@@ -256,124 +338,157 @@
         &-box1 {
             &-fluid {
                 max-height: 360px !important;
-                &_img{
-                margin: 0px 50px !important;
-                }
+            }
+            &_img{
+                width: 380px !important;
             }
         }
     }
 }
 
 @include media-breakpoint-down(lg) {
-.informations {
+    .informations {
         &-box1 {
             &-fluid {
-            width: 100% !important;
-            &_img {
-                flex-shrink: 0;
-                    margin: 0px 20px !important;
+                width: 100% !important;
+                &_img{
+                    width: 380px !important;
                 }
             }
-            &_carImg{
-            width: 130px !important;
-            height: 90px !important;
-            flex-shrink: 0;
-            }
         }
+
         &-box2 {
-            margin-top: 20px;
             &_title {
                 font-size: 22px !important;
-                &-Reviewer{
+
+                &-Reviewer {
                     margin-top: 10px;
                 }
             }
-            &_content{
-            margin-top: 10px !important;
-                span{
-                font-size:14px !important;
+
+            &_content {
+                margin-top: 10px !important;
+
+                span {
+                    font-size: 14px !important;
                 }
-                .About{
+
+                .About {
                     font-size: 14px !important;
-                    b{
-                    font-size: 14px !important;
+
+                    b {
+                        font-size: 14px !important;
                     }
                 }
             }
-            &-money{
-            font-size: 22px !important;
-            &_day{
-            font-size: 14px !important;
-            }
+
+            &-money {
+                font-size: 22px !important;
+
+                &_day {
+                    font-size: 14px !important;
+                }
             }
         }
     }
 }
 
 @include media-breakpoint-down(md) {
-    .detailbody{
+    .detailbody {
         padding: 20px;
     }
+
     .informations {
         &-box1 {
             &-fluid {
-            width: 100% !important;
-            &_img {
-                width: 260px !important;
-                height: 92px !important;            
-                flex-shrink: 0;
-                    margin: 0px 20px !important;
+                width: 100% !important;
+                &_img {
+                    width: 380px !important;
+                    height: 120px !important;
+                    flex-shrink: 0;
+                }
+                &_title{
+                    font-size: 24px !important;
+                }
+                &_content{
+                    font-size: 14px !important;
                 }
             }
-            &_carImg{
-            width: 90px !important;
-            height: 60px !important;
-            flex-shrink: 0;
+
+            &_carImg {
+                width: 90px !important;
+                height: 60px !important;
+                flex-shrink: 0;
             }
         }
+
         &-box2 {
             margin-top: 20px;
+
             &_title {
                 font-size: 20px !important;
-                &-Reviewer{
+
+                &-Reviewer {
                     margin-top: 10px;
                 }
             }
-            &_content{
-            margin-top: 10px !important;
-                span{
-                font-size:12px !important;
+
+            &_content {
+                margin-top: 10px !important;
+
+                span {
+                    font-size: 12px !important;
                 }
-                .About{
+
+                .About {
                     font-size: 12px !important;
-                    b{
-                    font-size: 12px !important;
+
+                    b {
+                        font-size: 12px !important;
                     }
                 }
             }
-            &-money{
-            font-size: 20px !important;
-            &_day{
-            font-size: 12px !important;
-            }
+
+            &-money {
+                font-size: 20px !important;
+
+                &_day {
+                    font-size: 12px !important;
+                }
             }
         }
     }
-    .profileImg{
+
+    .profileImg {
         width: 50px;
         height: 50px;
     }
-    .review{
-        &-user{
-            &-title{
-                b{
+
+    .review {
+        &-user {
+            &-title {
+                b {
                     font-size: 16px;
                 }
             }
         }
     }
+    #thumbs .current .item {
+        padding: 4px;
+    }
 }
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+    .informations-box1-fluid{
+        &_content{
+            top: 100px !important;
+        }
+        &_img {
+            width: 190px !important;
+            height: 60px !important;
+            flex-shrink: 0;
+        }
+    }
+}
 
 @include media-breakpoint-down(def) {}

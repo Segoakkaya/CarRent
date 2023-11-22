@@ -70,6 +70,18 @@ header{
             color: white;
             @extend .ff--Jakarta;
         }
+        .notificationcount{
+            position: absolute;
+            left: 35px;
+            top: 5px;
+            transition: all 0.5s;
+            font-size: 11px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
     }
 }
 .header-sm{

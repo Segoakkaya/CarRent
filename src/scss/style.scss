@@ -3,7 +3,9 @@ html {
     background: #F6F7F9;
     @extend .ff--Jakarta;
 }
-
+a{
+    text-decoration: none;
+}
 body{
     background: #F6F7F9;
     overflow-x: hidden;

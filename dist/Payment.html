@@ -1,1 +1,530 @@
-<!doctype html><html lang="tr"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no"/><script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script><title>Morent Car Payment theme</title><script defer="defer" src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head><body data-template="index"><headerpartial><!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title></head><body><div class="custom-container-partial"><header class="header-lg"><div class="row"><div class="col-md-2 col-6 d-flex text-center"><span class="logo">MORENT</span></div><div class="col-md-8 col-12 d-flex text-center"><div class="input-group mb-3"><button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button> <input class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1"> <button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button></div></div><div class="col-md-2 col-6 d-flex text-center justify-content-end"><ul class="menu_list d-flex"><li class="likes"><div class="menu_list-item"><span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span></span></div></li><li class="notification"><div class="menu_list-item position-relative"><span class="icon-notification"></span><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span></div></li><li class="setting"><div class="menu_list-item"><span class="icon-setting-2"></span></div></li><li class="profile order-1"><div class="menu_list"><img src="./assets/img/Profil.png"></div></li></ul></div></div></header><header class="header-sm"><div class="row"><div class="col-6 d-flex text-center"><span class="logo">MORENT</span></div><div class="col-6 d-flex text-center justify-content-end"><ul class="menu_list d-flex"><li class="profile"><div class="menu_list-profile mb-4"><img src="./assets/img/Profil.png"></div></li><li class="likes"><div class="menu_list-item"><span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span></span></div></li><li class="notification"><div class="menu_list-item"><span class="icon-notification"></span></div></li><li class="setting"><div class="menu_list-item"><span class="icon-setting-2"></span></div></li></ul></div><div class="col-12 d-flex text-center justify-content-between"><div class="input-group mb-3"><button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button> <input class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1"></div><button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button></div></div></header></div></body></html></headerpartial><div class="payment-container"><div class="row"><div class="col-lg-8 col-12 order-md-1 order-1"><div class="bilingInfo"><span class="bilingInfo-title">Biling Info</span><div class="d-flex justify-content-between"><span class="bilingInfo_smallText">Plase enter your biling info</span><span class="bilingInfo_smallText">Sten 1 of 4</span></div><div class="row"><div class="col-lg-6 col-12"><label for="Name">Name</label><br><input id="Name" placeholder="Your name"></div><div class="col-lg-6 col-12"><label for="Phone">Phone Number</label><br><input type="number" id="Phone" placeholder="Phone Number"></div></div><div class="row"><div class="col-lg-6 col-12"><label for="Addres">Adress</label><br><input id="Adress" placeholder="Adress"></div><div class="col-lg-6 col-12"><label for="Town">Town/City</label><br><input id="Town" placeholder="Town Or City"></div></div></div><div class="rentalInfo"><span class="rentalInfo-title">Rental Info</span><div class="d-flex justify-content-between"><span class="rentalInfo_smallText">Plase select your rental date</span><span class="rentalInfo_smallText">Sten 2 of 4</span></div><div class="rentalInfo-content"><span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>Pick-Up</div><div class="row"><div class="col-lg-6 col-12"><label for="location">Location</label><br><select id="example-getting-started location" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="rentalInfo-select"><option value="0" selected="selected" disabled="disabled" hidden>Select your city</option><option value="C">A Coruña</option><option value="AB">Albacete</option><option value="A">Alicante</option><option value="AL">Almería</option><option value="AN">Andalusia</option><option value="VI">Araba / Álava</option><option value="AR">Aragon</option><option value="BA">Badajoz</option><option value="PM">Balearic Islands</option><option value="B">Barcelona</option><option value="PV">Basque Country</option><option value="BI">Biscay</option><option value="BU">Burgos</option><option value="CC">Cáceres</option><option value="CA">Cádiz</option><option value="CN">Canary Islands</option><option value="S">Cantabria</option><option value="CS">Castellón</option><option value="CL">Castile and León</option><option value="CM">Castile-La Mancha</option><option value="CT">Catalonia</option><option value="CE">Ceuta</option><option value="CR">Ciudad Real</option><option value="MD">Community of Madrid</option><option value="CO">Córdoba</option><option value="CU">Cuenca</option><option value="EX">Extremadura</option><option value="GA">Galicia</option><option value="SS">Gipuzkoa</option><option value="GI">Girona</option><option value="GR">Granada</option><option value="GU">Guadalajara</option><option value="H">Huelva</option><option value="HU">Huesca</option><option value="J">Jaén</option><option value="RI">La Rioja</option><option value="GC">Las Palmas</option><option value="LE">León</option><option value="L">Lleida</option><option value="LU">Lugo</option><option value="M">Madrid</option><option value="MA">Málaga</option><option value="ML">Melilla</option><option value="MU">Murcia</option><option value="NC">Navarre</option><option value="OR">Ourense</option><option value="P">Palencia</option><option value="PO">Pontevedra</option><option value="O">of Asturias</option><option value="AV">of Ávila</option><option value="MC">Region of Murcia</option><option value="SA">Salamanca</option><option value="TF">Santa Cruz de Tenerife</option><option value="SG">Segovia</option><option value="SE">Seville</option><option value="SO">Soria</option><option value="T">Tarragona</option><option value="TE">Teruel</option><option value="TO">Toledo</option><option value="V">Valencia</option><option value="VC">Valencian Community</option><option value="VA">Valladolid</option><option value="ZA">Zamora</option><option value="Z">Zaragoza</option></select></div><div class="col-lg-6 col-12"><label for="date">Date</label><br><input name="date" value="11/01/2023" placeholder="Select Your Date" class="rentalInfo-input"/></div></div><div class="row"><div class="col-lg-6"><label for="saat">Time</label><br><input name="saat" value="10:00" placeholder="Check In" class="saat rentalInfo-input" id="pickUp-hour"/></div></div><div class="rentalInfo-content"><span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>Drop-off</div><div class="row"><div class="col-lg-6 col-12"><label for="location">Location</label><br><select id="example-getting-started location" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="rentalInfo-select"><option value="0" selected="selected" disabled="disabled" hidden>Select your city</option><option value="C">A Coruña</option><option value="AB">Albacete</option><option value="A">Alicante</option><option value="AL">Almería</option><option value="AN">Andalusia</option><option value="VI">Araba / Álava</option><option value="AR">Aragon</option><option value="BA">Badajoz</option><option value="PM">Balearic Islands</option><option value="B">Barcelona</option><option value="PV">Basque Country</option><option value="BI">Biscay</option><option value="BU">Burgos</option><option value="CC">Cáceres</option><option value="CA">Cádiz</option><option value="CN">Canary Islands</option><option value="S">Cantabria</option><option value="CS">Castellón</option><option value="CL">Castile and León</option><option value="CM">Castile-La Mancha</option><option value="CT">Catalonia</option><option value="CE">Ceuta</option><option value="CR">Ciudad Real</option><option value="MD">Community of Madrid</option><option value="CO">Córdoba</option><option value="CU">Cuenca</option><option value="EX">Extremadura</option><option value="GA">Galicia</option><option value="SS">Gipuzkoa</option><option value="GI">Girona</option><option value="GR">Granada</option><option value="GU">Guadalajara</option><option value="H">Huelva</option><option value="HU">Huesca</option><option value="J">Jaén</option><option value="RI">La Rioja</option><option value="GC">Las Palmas</option><option value="LE">León</option><option value="L">Lleida</option><option value="LU">Lugo</option><option value="M">Madrid</option><option value="MA">Málaga</option><option value="ML">Melilla</option><option value="MU">Murcia</option><option value="NC">Navarre</option><option value="OR">Ourense</option><option value="P">Palencia</option><option value="PO">Pontevedra</option><option value="O">of Asturias</option><option value="AV">of Ávila</option><option value="MC">Region of Murcia</option><option value="SA">Salamanca</option><option value="TF">Santa Cruz de Tenerife</option><option value="SG">Segovia</option><option value="SE">Seville</option><option value="SO">Soria</option><option value="T">Tarragona</option><option value="TE">Teruel</option><option value="TO">Toledo</option><option value="V">Valencia</option><option value="VC">Valencian Community</option><option value="VA">Valladolid</option><option value="ZA">Zamora</option><option value="Z">Zaragoza</option></select></div><div class="col-lg-6 col-12"><label for="date">Date</label><br><input name="date" value="11/01/2023" placeholder="Select Your Date" class="rentalInfo-input"/></div></div><div class="row"><div class="col-lg-6"><label for="saat">Time</label><br><input name="saat" value="10:00" placeholder="Check In" class="saat rentalInfo-input" id="pickUp-hour"/></div></div></div><div class="paymentMethod"><span class="paymentMethod-title">Payment Method</span><div class="d-flex justify-content-between"><span class="paymentMethod_smallText">Please enter your payment method</span><span class="paymentMethod_smallText">Sten 3 of 4</span></div><div class="row"><div><div data-bs-toggle="collapse" data-bs-target="#credit" aria-expanded="false" aria-controls="credit" class="acordion d-flex aling-item-center"><div class="form-check form-check-inline acordion_head"><input class="form-check-input" type="radio" name="sector" id="credit_sector" value="0"> <label class="form-check-label" for="credit_sector">Credit Card</label> <img src="../assets/img/Visa.png"></div></div><div class="col-lg-12"><div class="collapse acordion_body" id="credit" data-bs-parent="#sector_descriptions"><div class="card card-body"><div class="row"><div class="col-lg-6 col-12"><label for="cardNum">Card Number</label><br><input type="number" id="cardNum" placeholder="Card number"></div><div class="col-lg-6 col-12"><label for="exp">Card Number</label><br><input type="date" id="exp"></div></div><div class="row"><div class="col-lg-6 col-12"><label for="cardHol">Card Holder</label><br><input id="cardHol" placeholder="Card holder"></div><div class="col-lg-6 col-12"><label for="cvc">CVC</label><br><input type="num" id="cvc" placeholder="CVC"></div></div></div></div></div><div data-bs-toggle="collapse" data-bs-target="#paypal" aria-expanded="false" aria-controls="paypal" class="acordion d-flex aling-item-center"><div class="form-check form-check-inline acordion_head"><input class="form-check-input" type="radio" name="sector" id="paypal_sector" value="1"> <label class="form-check-label" for="paypal_sector">Paypal</label> <img src="../assets/img/PayPal.png"></div></div><div class="col-lg-12"><div class="collapse acordion_body" id="paypal" data-bs-parent="#sector_descriptions"><div class="card card-body"><div class="row"><div class="col-lg-6 col-12"><label for="cardNum">Card Number</label><br><input type="number" id="cardNum" placeholder="Card number"></div><div class="col-lg-6 col-12"><label for="exp">Card Number</label><br><input type="date" id="exp"></div></div><div class="row"><div class="col-lg-6 col-12"><label for="cardHol">Card Holder</label><br><input id="cardHol" placeholder="Card holder"></div><div class="col-lg-6 col-12"><label for="cvc">CVC</label><br><input type="num" id="cvc" placeholder="CVC"></div></div></div></div></div><div data-bs-toggle="collapse" data-bs-target="#bitcoin" aria-expanded="false" aria-controls="bitcoin" class="acordion d-flex aling-item-center"><div class="form-check form-check-inline acordion_head"><input class="form-check-input" type="radio" name="sector" id="bitcoin_sector" value="2"> <label class="form-check-label" for="bitcoin_sector">Bitcoin</label> <img src="../assets/img/Bitcoin.png"></div></div><div class="col-lg-12"><div class="collapse acordion_body" id="bitcoin" data-bs-parent="#sector_descriptions"><div class="card card-body"><div class="row"><div class="col-lg-6 col-12"><label for="cardNum">Card Number</label><br><input type="number" id="cardNum" placeholder="Card number"></div><div class="col-lg-6 col-12"><label for="exp">Card Number</label><br><input type="date" id="exp"></div></div><div class="row"><div class="col-lg-6 col-12"><label for="cardHol">Card Holder</label><br><input id="cardHol" placeholder="Card holder"></div><div class="col-lg-6 col-12"><label for="cvc">CVC</label><br><input type="num" id="cvc" placeholder="CVC"></div></div></div></div></div></div></div></div><div class="confirmation"><span class="confirmation-title">Confirmation</span><div class="d-flex justify-content-between"><span class="confirmation_smallText">We are getting to the end. Just few clicks and your rental is ready!</span><span class="confirmation_smallText">Sten 4 of 4</span></div><div class="row"><div class="col-12"><label for="agree1"><input type="checkbox" id="agree1">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label></div><div class="col-12"><label for="agree2"><input type="checkbox" id="agree2">I agree with our terms and conditions and privacy policy.</label></div><div class="col-12"><button class="btn btn-primary confirmation-btn">Rent Now</button></div><div class="col-12"><img src="../assets/img/Layer.png"></div><div class="col-12"><p class="layer-title">All your data are safe</p><span class="layer-smallText">We are using the most advanced security to provide you the best experience ever.</span></div></div></div></div><div class="col-lg-4 col-12 order-lg-1"><div class="Rental"><span class="Rental-title">Rental Summary</span><div class="Rental-smallText">Prices may change depending on the length of the rental and the price of your rental car.</div><div class="Rental_carAbout d-flex justify-content-between aling-item-center"><img src="../assets/img/minimg.png" class="Rental_carAbout_img"><div class="Rental_carAbout-text d-flex flex-column"><span class="Rental_carAbout-text-title">Nissan GT-R</span> <span class="Rental_carAbout-text-smallText"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star-bos.png"> 440+ Reviewer</span></div></div><div class="Rental_total"><div class="Rental_total-subtotal d-flex justify-content-between"><span class="Rental_total-subtotal-smallText">Subtotal</span> <span class="Rental_total-subtotal-price">$80.00</span></div><div class="Rental_total-Tax d-flex justify-content-between"><span class="Rental_total-Tax-smallText">Tax</span> <span class="Rental_total-Tax-price">$0</span></div></div><div class="Rental_promo"><div class="input-group mb-3"><input class="form-control Rental_promo-input" placeholder="Apply Promo Code" aria-label="Example text with button addon" aria-describedby="button-addon1"> <button class="btn Rental_promo-btn" type="button" id="button-addon1">Apply Now</button></div></div><div class="Rental_price d-flex justify-content-between"><div class="Rental_price-title d-flex flex-column"><span class="Rental_price-title_bold">Total Rental Price</span> <span class="Rental_price-title_smallText">Overall price and includes rental discount</span></div><span class="Rental_price-money">$80.00</span></div></div></div></div></div><footerpartial><!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title></head><body><div class="custom-container-partial bg--white"><div class="product"><div class="row"><div class="col-lg-6 col-12"><div class="bilgi"><p class="logo">MORENT</p><span class="bilgi_content">Our vision is to provide convenience and help increase your sales business.</span></div></div><div class="col-lg-2 col-6"><div class="abouts"><span class="abouts_content">About</span><ul class="abouts_list"><li class="abouts_list-item"><a href="#">How it works</a></li><li class="abouts_list-item"><a href="#">Featured</a></li><li class="abouts_list-item"><a href="#">Partnership</a></li><li class="abouts_list-item"><a href="#">Bussiness Relation</a></li></ul></div></div><div class="col-lg-2 col-6"><div class="cmnt"><span class="cmnt_content">community</span><ul class="cmnt_list"><li class="cmnt_list-item"><a href="#">Events</a></li><li class="cmnt_list-item"><a href="#">Blog</a></li><li class="cmnt_list-item"><a href="#">Podcast</a></li><li class="cmnt_list-item"><a href="#">Invite a friend</a></li></ul></div></div><div class="col-lg-2 col-6"><div class="socials"><span class="socials_content">Socials</span><ul class="socials_list"><li class="socials_list-item"><a href="#">Discord</a></li><li class="socials_list-item"><a href="#">Instagram</a></li><li class="socials_list-item"><a href="#">Twitter</a></li><li class="socials_list-item"><a href="#">Facebook</a></li></ul></div></div></div><footer class="footer"><div class="row"><div class="col-lg-8 col-12 foter"><span class="footer_content">©2022 MORENT. All rights reserved</span></div><div class="col-lg-2 col-6"><a href="#" class="footer_privacy">Privacy & Policy</a></div><div class="col-lg-2 col-6 text-end"><a href="#" class="footer_terms">Terms & Condition</a></div></div></footer></div></div></body></html></footerpartial></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <title>Morent Car Payment theme</title>
+  <script defer src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head>
+    <body data-template="index">
+        <headerpartial><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="custom-container-partial">
+        <header class="header-lg">
+            <div class="row">
+                <div class="col-md-2 col-6 d-flex text-center">
+                    <a href="/"><span class="logo">MORENT</span></a>
+                </div>
+                <div class="col-md-8 col-12 d-flex text-center">
+                    <div class="input-group mb-3">
+                        <button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button>
+                        <input type="text" class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                        <button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button>
+                      </div>
+                </div>
+                <div class="col-md-2 col-6 d-flex text-center justify-content-end">
+                    <ul class="menu_list d-flex">
+                        <li class="likes">
+                            <div class="menu_list-item">
+                                <span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span>
+                            </div>
+                        </li>
+                        <li class="notification">
+                            <div class="menu_list-item position-relative"><span class="icon-notification"></span><span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"></span></div>
+                            
+                        </li>
+                        <li class="setting">
+                            <div class="menu_list-item"><span class="icon-setting-2"></span></div>
+                        </li>
+                        <li class="profile order-1">
+                            <div class="menu_list"><img src="./assets/img/Profil.png"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <header class="header-sm">
+            <div class="row">
+                <div class="col-6 d-flex text-center">
+                    <span class="logo">MORENT</span>
+                </div>
+                <div class="col-6 d-flex text-center justify-content-end">
+                    <ul class="menu_list d-flex">
+                        <li class="profile">
+                            <div class="menu_list-profile mb-4"><img src="./assets/img/Profil.png"></div>
+                        </li>
+                        <li class="likes">
+                            <div class="menu_list-item">
+                                <span class="icon-heart position-relative"><span class="bg-danger border border-light rounded-circle likescount">0</span>
+                            </div>
+                        </li>
+                        <li class="notification">
+                            <div class="menu_list-item"><span class="icon-notification"></span></div>
+                        </li>
+                        <li class="setting">
+                            <div class="menu_list-item"><span class="icon-setting-2"></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 d-flex text-center justify-content-between">
+                    <div class="input-group mb-3">
+                        <button class="btn btnSearch" type="button" id="button-addon1"><span class="icon-icons8-search-64"></span></button>
+                        <input type="text" class="form-control filterText" placeholder="Search something here" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      </div>
+                      <button class="btn btnFilter" type="button" id="button-addon1"><span class="icon-icons8-filter-48"></span></button>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html></headerpartial>
+        <div class="payment-container">
+            <div class="row">
+                <div class="col-lg-8 col-12 order-md-1 order-1">
+                    <div class="bilingInfo">
+                        <span class="bilingInfo-title">Biling Info</span>
+                        <div class="d-flex justify-content-between"><span class="bilingInfo_smallText">Plase enter your biling info</span><span class="bilingInfo_smallText">Sten 1 of 4</span></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="Name">Name</label><br>
+                                <input type="text" id="Name" placeholder="Your name">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="Phone">Phone Number</label><br>
+                                <input type="number" id="Phone" placeholder="Phone Number">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="Addres">Adress</label><br>
+                                <input type="text" id="Adress" placeholder="Adress">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="Town">Town/City</label><br>
+                                <input type="text" id="Town" placeholder="Town Or City">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rentalInfo">
+                        <span class="rentalInfo-title">Rental Info</span>
+                        <div class="d-flex justify-content-between"><span class="rentalInfo_smallText">Plase select your rental date</span><span class="rentalInfo_smallText">Sten 2 of 4</span></div>
+                        <div class="rentalInfo-content"><span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>Pick-Up</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="location">Location</label><br>
+                                <select id="example-getting-started location" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="rentalInfo-select">
+                                    <option value="0" selected disabled hidden>Select your city</option>
+                                    <option value="C">A Coruña  </option>
+                                    <option value="AB">Albacete  </option>
+                                    <option value="A">Alicante  </option>
+                                    <option value="AL">Almería  </option>
+                                    <option value="AN">Andalusia</option>
+                                    <option value="VI">Araba / Álava</option>
+                                    <option value="AR">Aragon</option>
+                                    <option value="BA">Badajoz  </option>
+                                    <option value="PM">Balearic Islands</option>
+                                    <option value="B">Barcelona  </option>
+                                    <option value="PV">Basque Country</option>
+                                    <option value="BI">Biscay</option>
+                                    <option value="BU">Burgos  </option>
+                                    <option value="CC">Cáceres  </option>
+                                    <option value="CA">Cádiz  </option>
+                                    <option value="CN">Canary Islands</option>
+                                    <option value="S">Cantabria</option>
+                                    <option value="CS">Castellón  </option>
+                                    <option value="CL">Castile and León</option>
+                                    <option value="CM">Castile-La Mancha</option>
+                                    <option value="CT">Catalonia</option>
+                                    <option value="CE">Ceuta</option>
+                                    <option value="CR">Ciudad Real  </option>
+                                    <option value="MD">Community of Madrid</option>
+                                    <option value="CO">Córdoba  </option>
+                                    <option value="CU">Cuenca  </option>
+                                    <option value="EX">Extremadura</option>
+                                    <option value="GA">Galicia</option>
+                                    <option value="SS">Gipuzkoa</option>
+                                    <option value="GI">Girona  </option>
+                                    <option value="GR">Granada  </option>
+                                    <option value="GU">Guadalajara  </option>
+                                    <option value="H">Huelva  </option>
+                                    <option value="HU">Huesca  </option>
+                                    <option value="J">Jaén  </option>
+                                    <option value="RI">La Rioja</option>
+                                    <option value="GC">Las Palmas  </option>
+                                    <option value="LE">León  </option>
+                                    <option value="L">Lleida  </option>
+                                    <option value="LU">Lugo  </option>
+                                    <option value="M">Madrid  </option>
+                                    <option value="MA">Málaga  </option>
+                                    <option value="ML">Melilla</option>
+                                    <option value="MU">Murcia  </option>
+                                    <option value="NC">Navarre</option>
+                                    <option value="OR">Ourense  </option>
+                                    <option value="P">Palencia  </option>
+                                    <option value="PO">Pontevedra  </option>
+                                    <option value="O">  of Asturias</option>
+                                    <option value="AV">  of Ávila</option>
+                                    <option value="MC">Region of Murcia</option>
+                                    <option value="SA">Salamanca  </option>
+                                    <option value="TF">Santa Cruz de Tenerife  </option>
+                                    <option value="SG">Segovia  </option>
+                                    <option value="SE">Seville  </option>
+                                    <option value="SO">Soria  </option>
+                                    <option value="T">Tarragona  </option>
+                                    <option value="TE">Teruel  </option>
+                                    <option value="TO">Toledo  </option>
+                                    <option value="V">Valencia  </option>
+                                    <option value="VC">Valencian Community</option>
+                                    <option value="VA">Valladolid  </option>
+                                    <option value="ZA">Zamora  </option>
+                                    <option value="Z">Zaragoza  </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="date">Date</label><br>
+                                <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="rentalInfo-input"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="saat">Time</label><br>
+                                <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat rentalInfo-input" id="pickUp-hour"/>
+                            </div>
+                        </div>
+                        <div class="rentalInfo-content"><span class="icon-mark-1"><span class="path1"></span><span class="path2"></span></span>Drop-off</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-12">
+                                <label for="location">Location</label><br>
+                                <select id="example-getting-started location" select data-nonselected-text="Select a City" data-search-placeholder="Ara" class="rentalInfo-select">
+                                    <option value="0" selected disabled hidden>Select your city</option>
+                                    <option value="C">A Coruña  </option>
+                                    <option value="AB">Albacete  </option>
+                                    <option value="A">Alicante  </option>
+                                    <option value="AL">Almería  </option>
+                                    <option value="AN">Andalusia</option>
+                                    <option value="VI">Araba / Álava</option>
+                                    <option value="AR">Aragon</option>
+                                    <option value="BA">Badajoz  </option>
+                                    <option value="PM">Balearic Islands</option>
+                                    <option value="B">Barcelona  </option>
+                                    <option value="PV">Basque Country</option>
+                                    <option value="BI">Biscay</option>
+                                    <option value="BU">Burgos  </option>
+                                    <option value="CC">Cáceres  </option>
+                                    <option value="CA">Cádiz  </option>
+                                    <option value="CN">Canary Islands</option>
+                                    <option value="S">Cantabria</option>
+                                    <option value="CS">Castellón  </option>
+                                    <option value="CL">Castile and León</option>
+                                    <option value="CM">Castile-La Mancha</option>
+                                    <option value="CT">Catalonia</option>
+                                    <option value="CE">Ceuta</option>
+                                    <option value="CR">Ciudad Real  </option>
+                                    <option value="MD">Community of Madrid</option>
+                                    <option value="CO">Córdoba  </option>
+                                    <option value="CU">Cuenca  </option>
+                                    <option value="EX">Extremadura</option>
+                                    <option value="GA">Galicia</option>
+                                    <option value="SS">Gipuzkoa</option>
+                                    <option value="GI">Girona  </option>
+                                    <option value="GR">Granada  </option>
+                                    <option value="GU">Guadalajara  </option>
+                                    <option value="H">Huelva  </option>
+                                    <option value="HU">Huesca  </option>
+                                    <option value="J">Jaén  </option>
+                                    <option value="RI">La Rioja</option>
+                                    <option value="GC">Las Palmas  </option>
+                                    <option value="LE">León  </option>
+                                    <option value="L">Lleida  </option>
+                                    <option value="LU">Lugo  </option>
+                                    <option value="M">Madrid  </option>
+                                    <option value="MA">Málaga  </option>
+                                    <option value="ML">Melilla</option>
+                                    <option value="MU">Murcia  </option>
+                                    <option value="NC">Navarre</option>
+                                    <option value="OR">Ourense  </option>
+                                    <option value="P">Palencia  </option>
+                                    <option value="PO">Pontevedra  </option>
+                                    <option value="O">  of Asturias</option>
+                                    <option value="AV">  of Ávila</option>
+                                    <option value="MC">Region of Murcia</option>
+                                    <option value="SA">Salamanca  </option>
+                                    <option value="TF">Santa Cruz de Tenerife  </option>
+                                    <option value="SG">Segovia  </option>
+                                    <option value="SE">Seville  </option>
+                                    <option value="SO">Soria  </option>
+                                    <option value="T">Tarragona  </option>
+                                    <option value="TE">Teruel  </option>
+                                    <option value="TO">Toledo  </option>
+                                    <option value="V">Valencia  </option>
+                                    <option value="VC">Valencian Community</option>
+                                    <option value="VA">Valladolid  </option>
+                                    <option value="ZA">Zamora  </option>
+                                    <option value="Z">Zaragoza  </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <label for="date">Date</label><br>
+                                <input type="text" name="date" value="11/01/2023" placeholder="Select Your Date" class="rentalInfo-input"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="saat">Time</label><br>
+                                <input type="text" name="saat" value="10:00" placeholder="Check In" class="saat rentalInfo-input" id="pickUp-hour"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paymentMethod">
+                        <span class="paymentMethod-title">Payment Method</span>
+                        <div class="d-flex justify-content-between"><span class="paymentMethod_smallText">Please enter your payment method</span><span class="paymentMethod_smallText">Sten 3 of 4</span></div>
+                        <div class="row">
+                            <div>
+                              <div data-bs-toggle="collapse" data-bs-target="#credit" aria-expanded="false" aria-controls="credit" class="acordion d-flex aling-item-center">
+                                <div class="form-check form-check-inline acordion_head">
+                                  <input class="form-check-input" type="radio" name="sector" id="credit_sector" value="0">
+                                  <label class="form-check-label" for="credit_sector">Credit Card</label>
+                                  <img src="../assets/img/Visa.png">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="collapse acordion_body" id="credit" data-bs-parent="#sector_descriptions">
+                                  <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <label for="cardNum">Card Number</label><br>
+                                            <input type="number" id="cardNum" placeholder="Card number">
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <label for="exp">Card Number</label><br>
+                                            <input type="date" id="exp">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <label for="cardHol">Card Holder</label><br>
+                                            <input type="text" id="cardHol" placeholder="Card holder">
+                                        </div>
+                                        <div class="col-lg-6 col-12">
+                                            <label for="cvc">CVC</label><br>
+                                            <input type="num" id="cvc" placeholder="CVC">
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-bs-toggle="collapse" data-bs-target="#paypal" aria-expanded="false" aria-controls="paypal"  class="acordion d-flex aling-item-center">
+                                <div class="form-check form-check-inline acordion_head">
+                                  <input class="form-check-input" type="radio" name="sector" id="paypal_sector" value="1">
+                                  <label class="form-check-label" for="paypal_sector">Paypal</label>
+                                  <img src="../assets/img/PayPal.png">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="collapse acordion_body" id="paypal" data-bs-parent="#sector_descriptions">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cardNum">Card Number</label><br>
+                                                <input type="number" id="cardNum" placeholder="Card number">
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <label for="exp">Card Number</label><br>
+                                                <input type="date" id="exp">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cardHol">Card Holder</label><br>
+                                                <input type="text" id="cardHol" placeholder="Card holder">
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cvc">CVC</label><br>
+                                                <input type="num" id="cvc" placeholder="CVC">
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                              <div data-bs-toggle="collapse" data-bs-target="#bitcoin" aria-expanded="false" aria-controls="bitcoin"  class="acordion d-flex aling-item-center">
+                                <div class="form-check form-check-inline acordion_head">
+                                  <input class="form-check-input" type="radio" name="sector" id="bitcoin_sector" value="2">
+                                  <label class="form-check-label" for="bitcoin_sector">Bitcoin</label>
+                                  <img src="../assets/img/Bitcoin.png">
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="collapse acordion_body" id="bitcoin" data-bs-parent="#sector_descriptions">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cardNum">Card Number</label><br>
+                                                <input type="number" id="cardNum" placeholder="Card number">
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <label for="exp">Card Number</label><br>
+                                                <input type="date" id="exp">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cardHol">Card Holder</label><br>
+                                                <input type="text" id="cardHol" placeholder="Card holder">
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <label for="cvc">CVC</label><br>
+                                                <input type="num" id="cvc" placeholder="CVC">
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirmation">
+                        <span class="confirmation-title">Confirmation</span>
+                        <div class="d-flex justify-content-between"><span class="confirmation_smallText">We are getting to the end. Just few clicks and your rental is ready!</span><span class="confirmation_smallText">Sten 4 of 4</span></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="agree1"><input type="checkbox" id="agree1">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                            </div>
+                            <div class="col-12">
+                                <label for="agree2"><input type="checkbox" id="agree2">I agree with our terms and conditions and privacy policy.</label>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary confirmation-btn">
+                                    Rent Now
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <img src="../assets/img/Layer.png">
+                            </div>
+                            <div class="col-12">
+                                <p class="layer-title">All your data are safe</p>
+                                <span class="layer-smallText">We are using the most advanced security to provide you the best experience ever.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 order-lg-1">
+                    <div class="Rental">
+                        <span class="Rental-title">Rental Summary</span>
+                        <div class="Rental-smallText">Prices may change depending on the length of the rental and the price of your rental car.</div>
+                        <div class="Rental_carAbout d-flex justify-content-between aling-item-center">
+                            <img src="../assets/img/minimg.png" class="Rental_carAbout_img">
+                            <div class="Rental_carAbout-text d-flex flex-column">
+                                <span class="Rental_carAbout-text-title">Nissan GT-R</span>
+                                <span class="Rental_carAbout-text-smallText"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star.png"><img src="../assets/img/ic-actions-star-bos.png"> 440+ Reviewer</span>
+                            </div>
+                        </div>
+                        <div class="Rental_total">
+                            <div class="Rental_total-subtotal d-flex justify-content-between">
+                                <span class="Rental_total-subtotal-smallText">Subtotal</span>
+                                <span class="Rental_total-subtotal-price">$80.00</span>
+                            </div>
+                            <div class="Rental_total-Tax d-flex justify-content-between">
+                                <span class="Rental_total-Tax-smallText">Tax</span>
+                                <span class="Rental_total-Tax-price">$0</span>
+                            </div>
+                        </div>
+                        <div class="Rental_promo">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control Rental_promo-input" placeholder="Apply Promo Code" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <button class="btn Rental_promo-btn" type="button" id="button-addon1">Apply Now</button>
+                            </div>
+                        </div>
+                        <div class="Rental_price d-flex justify-content-between">
+                            <div class="Rental_price-title d-flex flex-column">
+                                <span class="Rental_price-title_bold">Total Rental Price</span>
+                                <span class="Rental_price-title_smallText">Overall price and includes rental discount</span>
+                            </div>
+                            <span class="Rental_price-money">
+                                $80.00
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footerpartial><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="custom-container-partial bg--white">
+            <div class="product">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                       <div class="bilgi">
+                        <p class="logo">MORENT</p>
+                        <span class="bilgi_content">Our vision is to provide convenience and help increase your sales business.</span>
+                       </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="abouts">
+                            <span class="abouts_content">About</span>
+                            <ul class="abouts_list">
+                                <li class="abouts_list-item"><a href="#">How it works</a></li>
+                                <li class="abouts_list-item"><a href="#">Featured</a></li>
+                                <li class="abouts_list-item"><a href="#">Partnership</a></li>
+                                <li class="abouts_list-item"><a href="#">Bussiness Relation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="cmnt">
+                            <span class="cmnt_content">community</span>
+                            <ul class="cmnt_list">
+                                <li class="cmnt_list-item"><a href="#">Events</a></li>
+                                <li class="cmnt_list-item"><a href="#">Blog</a></li>
+                                <li class="cmnt_list-item"><a href="#">Podcast</a></li>
+                                <li class="cmnt_list-item"><a href="#">Invite a friend</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="socials">
+                            <span class="socials_content">Socials</span>
+                            <ul class="socials_list">
+                                <li class="socials_list-item"><a href="#">Discord</a></li>
+                                <li class="socials_list-item"><a href="#">Instagram</a></li>
+                                <li class="socials_list-item"><a href="#">Twitter</a></li>
+                                <li class="socials_list-item"><a href="#">Facebook</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-lg-8 col-12 foter">
+                            <span class="footer_content">©2022 MORENT. All rights reserved</span>
+                        </div>
+                        <div class="col-lg-2 col-6">
+                            <a href="#" class="footer_privacy">Privacy & Policy</a>
+                        </div>
+                        <div class="col-lg-2 col-6 text-end">
+                            <a href="#" class="footer_terms">Terms & Condition</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+</body>
+</html></footerpartial>
+    </body>
+</html>
